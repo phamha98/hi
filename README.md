@@ -1,15 +1,11 @@
 
-# [Emulator-gradle-node][Emulator-gradle-node]
-
-# [Debug][Debug]
-# [Export][Export]
-# [Template][Template]
-# [Installs-use][installs.use]
+# [Npm][Npm]
+# [Code][Code]
+# [Develop][Develop]
 
 
-[Template]:https://github.com/phamha98/hi/blob/main/src/template
-[installs.use]:https://github.com/phamha98/hi/blob/main/src/installs.use
 
-[Debug]:https://github.com/phamha98/hi/blob/main/src/debug
-[Export]:https://github.com/phamha98/hi/blob/main/src/export
-[Emulator-gradle-node]:https://github.com/phamha98/hi/blob/main/src/install-use/rn-gradle-emulator-node.md
+
+[Npm]:https://github.com/phamha98/hi/blob/main/ReactNative/Npm.md
+[Code]:https://github.com/phamha98/hi/blob/main/ReactNative/Code.md
+[Develop]:https://github.com/phamha98/hi/blob/main/ReactNative/Develop.md

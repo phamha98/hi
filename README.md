@@ -6,6 +6,6 @@
 
 
 
-[Npm]:https://github.com/phamha98/hi/blob/main/ReactNative/Npm.md
-[Code]:https://github.com/phamha98/hi/blob/main/ReactNative/Code.md
-[Develop]:https://github.com/phamha98/hi/blob/main/ReactNative/Develop.md
+[Npm]:https://github.com/phamha98/hi/blob/master/ReactNative/Npm.md
+[Code]:https://github.com/phamha98/hi/blob/master/ReactNative/Code.md
+[Develop]:https://github.com/phamha98/hi/blob/master/ReactNative/Develop.md

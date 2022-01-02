@@ -1,5 +1,6 @@
 https://github.com/react-native-community/hooks#usekeyboard
 
+```js
 import { useKeyboard } from '@react-native-community/hooks'
 
 const keyboard = useKeyboard()

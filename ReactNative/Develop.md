@@ -29,6 +29,10 @@ sudo rm -rf node_modules
 npm install -g appcenter-cli
 appcenter login    
 
+npx react-native run-android --variant=release
+cd android && ./gradlew assembleRelease 
+
+
 ```
 # 🚀 Emulator
 ## run :

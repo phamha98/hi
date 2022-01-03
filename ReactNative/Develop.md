@@ -26,6 +26,9 @@ sudo npm cache clean -f
 
 sudo rm -rf node_modules
 
+npm install -g appcenter-cli
+appcenter login    
+
 ```
 # 🚀 Emulator
 ## run :

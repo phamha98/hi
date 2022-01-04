@@ -366,3 +366,11 @@ sudo apt install ./teamviewer_amd64.deb
 wget https://download.teamviewer.com/download/linux/teamviewer-host_amd64.deb
 sudo apt install ./teamviewer-host_amd64.deb
 ```
+
+```
+Ubuntu software-->find:
+bleachbit
+```
+
+
+

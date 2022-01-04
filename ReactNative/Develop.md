@@ -31,9 +31,16 @@ appcenter login
 
 npx react-native run-android --variant=release
 cd android && ./gradlew assembleRelease 
-
+sudo ln -s $(which node) /usr/local/bin/node
 
 ```
+
+
+sudo ln -s $(which node) /usr/local/bin/node
+<h6>processRequest = (req, res, next) => {</h6>
+
+
+
 # 🚀 Emulator
 ## run :
 

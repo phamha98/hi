@@ -50,7 +50,17 @@ source ~/.profile
 nvm ls-remote
 nvm install 16.15.1
 ```
+remove 
 
+```
+sudo rm -rf /usr/local/bin/npm /usr/local/share/man/man1/node* ~/.npm
+sudo rm -rf /usr/local/lib/node*
+sudo rm -rf /usr/local/bin/node*
+sudo rm -rf /usr/local/include/node*
+
+sudo apt-get purge nodejs npm
+sudo apt autoremove
+```
 https://askubuntu.com/questions/1152570/npm-cant-find-module-semver-error-in-ubuntu-19-04
 
 ## 🚀 install npm.\*\*

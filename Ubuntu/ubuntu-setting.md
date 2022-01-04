@@ -51,6 +51,8 @@ nvm ls-remote
 nvm install 16.15.1
 ```
 
+https://askubuntu.com/questions/1152570/npm-cant-find-module-semver-error-in-ubuntu-19-04
+
 ## 🚀 install npm.\*\*
 
 <img  width="90" height="70" src="https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg">

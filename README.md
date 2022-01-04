@@ -1,13 +1,12 @@
+# [Develop][develop]
 
-# [Npm][Npm]
-# [Code][Code]
-# [Code2][Code2]
-# [Develop][Develop]
+# [Npm][npm]
 
+# [Code][code]
 
+# [Code2][code2]
 
-
-[Npm]:https://github.com/phamha98/hi/blob/master/ReactNative/Npm.md
-[Code]:https://github.com/phamha98/hi/blob/master/ReactNative/Code.md
-[Code2]:https://github.com/phamha98/hi/blob/master/ReactNative/Code2.md
-[Develop]:https://github.com/phamha98/hi/blob/master/ReactNative/Develop.md
+[npm]: https://github.com/phamha98/hi/blob/master/ReactNative/Npm.md
+[code]: https://github.com/phamha98/hi/blob/master/ReactNative/Code.md
+[code2]: https://github.com/phamha98/hi/blob/master/ReactNative/Code2.md
+[develop]: https://github.com/phamha98/hi/blob/master/ReactNative/Develop.md

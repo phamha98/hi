@@ -12,7 +12,7 @@ npx react-native start --port 8083
 sudo chmod 755 android/gradlew
 sudo chmod -R 0777 /tmp
 adb reverse tcp:8081 tcp:8081
-sudo ./gradlew --stop  
+sudo ./gradlew --stop
 sudo ./gradlew clean
 
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
@@ -27,21 +27,19 @@ sudo npm cache clean -f
 sudo rm -rf node_modules
 
 npm install -g appcenter-cli
-appcenter login    
+appcenter login
 
 npx react-native run-android --variant=release
-cd android && ./gradlew assembleRelease 
+cd android && ./gradlew assembleRelease
 sudo ln -s $(which node) /usr/local/bin/node
 
 ```
 
-
-sudo ln -s $(which node) /usr/local/bin/node
-<h6>processRequest = (req, res, next) => {</h6>
-
-
+<h3 style="color:red">processRequest = (req, res, next) => {</h3>
+<h3 style="color:red">sudo ln -s $(which node) /usr/local/bin/node</h3>
 
 # 🚀 Emulator
+
 ## run :
 
 [setting adb win]()

@@ -33,6 +33,74 @@ npx react-native run-android --variant=release
 cd android && ./gradlew assembleRelease
 sudo ln -s $(which node) /usr/local/bin/node
 
+
+```
+
+```gradle
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def formattedDate = new Date().format('HHmmss_DDMMYY')
+            outputFileName = "ApplicationName-${variant.name}-v${variant.versionName}-v${defaultConfig.versionCode}-time_${formattedDate}.apk"
+        }
+    }
+```
+
+- error: processRequest = (req, res, next) => {
+
+```
+sudo ln -s $(which node) /usr/local/bin/node
+```
+
+- remove node
+
+```
+sudo rm -rf /usr/local/bin/npm /usr/local/share/man/man1/node* ~/.npm
+sudo rm -rf /usr/local/lib/node*
+sudo rm -rf /usr/local/bin/node*
+sudo rm -rf /usr/local/include/node*
+
+sudo apt-get purge nodejs npm
+sudo apt autoremove
+```
+
+- node nvm
+
+```
+sudo apt install wget
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+source ~/.profile
+nvm ls-remote
+nvm install 16.15.1
+```
+
+- node apt
+
+```
+sudo apt install nodejs
+sudo apt install npm  -y
+sudo npm i  install -g react-native-cli
+
+sudo apt-get update
+sudo apt-get install openjdk-8-jdk
+
+sudo apt update
+sudo apt install android-studio
+
+sudo snap install android-studio --classic
+sudo add-apt-repository ppa:maarten-fonville/android-studio
+
+export ANDROID_HOME=/home/phamha/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+
+
+source ~/.bashrc
+source ~/.bash_profile
+
+
 ```
 
 <h3 style="color:red">processRequest = (req, res, next) => {</h3>

@@ -367,6 +367,7 @@ wget https://download.teamviewer.com/download/linux/teamviewer-host_amd64.deb
 sudo apt install ./teamviewer-host_amd64.deb
 ```
 
+<img   width="100" height="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Bleachbit_logo.svg/1200px-Bleachbit_logo.svg.png">
 ```
 Ubuntu software-->find:
 bleachbit

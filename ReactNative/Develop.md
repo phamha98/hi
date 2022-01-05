@@ -100,6 +100,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 source ~/.bashrc
 source ~/.bash_profile
 
+aapt dump permissions app-debug.apk
 
 ```
 

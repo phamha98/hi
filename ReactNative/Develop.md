@@ -102,6 +102,10 @@ source ~/.bash_profile
 
 aapt dump permissions app-debug.apk
 
+//clone folder
+git clone https://github.com/phamha98/hi.git/ ./image
+
+
 ```
 
 <h3 style="color:red">processRequest = (req, res, next) => {</h3>

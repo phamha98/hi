@@ -106,9 +106,17 @@ aapt dump permissions app-debug.apk
 git clone https://github.com/phamha98/hi.git/ ./image
 
 
-//DEVTOOLS
+//@@@DEVTOOLS
 npm install -g react-devtools
 react-devtools
+///@@@
+npm i babel-plugin-module-resolver &&
+npm i babel-plugin-wildcard &&
+
+
+
+
+
 ```
 
 <h3 style="color:red">processRequest = (req, res, next) => {</h3>

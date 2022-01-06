@@ -390,4 +390,4 @@ bleachbit
 FLIPPER
 sudo snap install flipper --edge
 
-
+https://www.facebook.com/fbflipper/public/linux

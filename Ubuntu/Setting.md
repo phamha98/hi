@@ -387,4 +387,7 @@ bleachbit
 ```
 
 
+FLIPPER
+sudo snap install flipper --edge
+
 

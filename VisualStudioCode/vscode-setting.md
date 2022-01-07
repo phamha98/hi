@@ -57,7 +57,9 @@
 }
 
 ```
-
+"editor.tokenColorCustomizations": {
+        "comments": "#058b01"
+    },
 ```
 ## 🚀 tip
 ```

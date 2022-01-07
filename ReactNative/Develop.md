@@ -112,7 +112,7 @@ react-devtools
 ///@@@
 npm i babel-plugin-module-resolver &&
 npm i babel-plugin-wildcard &&
-
+@@@ open developer option ::::Settings/About emulated device->touch 7 -Build number
 
 
 

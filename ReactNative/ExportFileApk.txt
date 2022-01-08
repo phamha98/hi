@@ -1,4 +1,16 @@
-  1, giam size  file apk
+ cmd
+ 
+ ```
+ applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def formattedDate = new Date().format('HHmmss_DDMMYY')
+            outputFileName = "ApplicationName-${variant.name}-v${variant.versionName}-v${defaultConfig.versionCode}-time_${formattedDate}.apk"
+        }
+    }
+ ```
+ 
+ 
+ 1, giam size  file apk
 
  A: build nặng do:
 1 tổng số mã Js được nhập vào ứng dụng của bạn (bao gồm trong node_modules)

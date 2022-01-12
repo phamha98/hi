@@ -1,1 +1,16 @@
+#Podfile
 
+```Podfile
+pod 'CodePush', :path => '../node_modules/react-native-code-push'
+```
+#Info.plist
+
+```
+<key>CodePushDeploymentKey</key>
+<string>UOH*********************************</string>
+
+```
+- package.json
+```json
+"cp-ios":"appcenter codepush release-react -a acc/project -d Production",
+```

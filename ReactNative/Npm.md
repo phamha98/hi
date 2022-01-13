@@ -101,6 +101,7 @@ implementation 'com.facebook.fresco:animated-gif:2.0.0'
 - @react-native-async-storage/async-storage
 - react-redux
 - underscore
+- react-native-open-intent
 
 [Attempt to invoke interface method 'boolean com.swamansion.reanimated.layoutReanimation.NativeMethodsHolder.isLayoutAnimationE]()
 

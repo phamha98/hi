@@ -1,1 +1,2 @@
 https://docs.gitlab.com/ee/ssh/
+ssh -T git@gitlab.com

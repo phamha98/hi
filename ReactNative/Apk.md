@@ -1,6 +1,10 @@
  cmd
  
  ```
+ org.gradle.jvmargs=-Xmx4608m
+ ```
+ 
+ ```
  applicationVariants.all { variant ->
         variant.outputs.all { output ->
             def formattedDate = new Date().format('HHmmss_DDMMYY')

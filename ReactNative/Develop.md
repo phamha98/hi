@@ -2,6 +2,12 @@
 
 ```cmd
 sudo rm -rf /tmp/metro-*
+npm start --reset-cache
+
+git add . && git commit -m "" && git push
+
+sudo chmod -R /user/path
+
 sudo ./gradlew cleanBuildCache
 
 react-native run-android --deviceId=emulator-5554

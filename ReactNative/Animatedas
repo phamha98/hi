@@ -16,7 +16,7 @@ const App = () => {
     // Will change fadeAnim value to 1 in 5 seconds
     Animated.timing(fadeAnim, {
       toValue: 1,
-      duration: 100,
+      duration: 300,
     }).start(()=>fadeOut());
     
   };
@@ -25,35 +25,16 @@ const App = () => {
     // Will change fadeAnim value to 0 in 3 seconds
     Animated.timing(fadeAnim, {
       toValue: 0,
-      duration: 1000,
+      duration: 500,
     }).start();
   };
   const [show, setShow] = useState(false);
   const _width = useRef(0);
   const _height = useRef(0);
-  // useEffect(() => {
-  //   animated();
-  // }, [show]);
-  // const animated = async () => {
-  //   await fadeIn();
-  //   // await fadeOut();
-  // };
+ 
   return (
     <SafeAreaView style={styles.container}>
-      <Animated.View
-        style={[
-          styles.fadingContainer,
-          {
-            // Bind opacity to animated value
-            opacity: fadeAnim,
-          },
-        ]}>
-        <Text style={styles.fadingText}>Fading View!</Text>
-      </Animated.View>
-      <View style={styles.buttonRow}>
-        <Button title="Fade In View" onPress={fadeIn} />
-        <Button title="Fade Out View" onPress={fadeOut} />
-      </View>
+     
       <View
         style={{ width: '90%', height: 500, backgroundColor: 'pink' }}
         onStartShouldSetResponder={(event) => {

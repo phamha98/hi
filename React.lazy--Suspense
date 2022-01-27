@@ -1,0 +1,13 @@
+const Events = React.lazy(() => import('./Events'));
+const Gallery = React.lazy(() => import('./Gallery'));
+
+function ArtistComponent() {
+  return (
+    <div className="event-list">
+      <Suspense fallback={<div>Loading...</div>}>
+        <Events />
+        <Gallery />
+      </Suspense>
+    </div>
+  );
+}

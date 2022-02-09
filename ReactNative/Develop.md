@@ -10,6 +10,9 @@ sudo chmod -R /user/path
 
 sudo ./gradlew cleanBuildCache
 
+npm install --save-dev jetifier
+npx jetify
+
 react-native run-android --deviceId=emulator-5554
 adb devices -l
 adb -s emulator-5554 shell

@@ -14,6 +14,7 @@ npm install --save-dev jetifier
 npx jetify
 
 react-native run-android --deviceId=emulator-5554
+emulator --list-avds
 adb devices -l
 adb -s emulator-5554 shell
 adb -s emulator-5555 install helloWorld.apk

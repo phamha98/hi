@@ -5,7 +5,7 @@ sudo rm -rf /tmp/metro-*
 npm start --reset-cache
 
 git add . && git commit -m "" && git push
-
+ssh-keygen
 sudo chmod -R /user/path
 
 sudo ./gradlew cleanBuildCache

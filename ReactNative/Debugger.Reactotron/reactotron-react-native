@@ -1,0 +1,29 @@
+-down 
+
+[https://github.com/infinitered/reactotron/releases][https://github.com/infinitered/reactotron/releases]
+
+```
+npm i --save-dev reactotron-react-native
+```
+
+
+
+
+ReactotronConfig.js
+```js
+import Reactotron from 'reactotron-react-native'
+
+Reactotron
+  .setAsyncStorageHandler(AsyncStorage) // AsyncStorage would either come from `react-native` or `@react-native-community/async-storage` depending on where you get it from
+  .configure() // controls connection & communication settings
+  .useReactNative() // add all built-in react native plugins
+  .connect() // let's connect!
+```
+
+- App.js (Create React Native App) or
+- index.js on line 1:
+```js
+if(__DEV__) {
+  import('./ReactotronConfig').then(() => console.log('Reactotron Configured'))
+}
+```

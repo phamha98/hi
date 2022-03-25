@@ -40,4 +40,42 @@ sm.sayName(); // Khoa Nguyen. Hàm này kế thừa từ prototype của Person
    brownBread.toast(); // I am toasting!
    sodaBread.toast(); // I am toasting!
 
-   
+//
+class Animal {
+    constructor(name) {
+        this.name = name;
+        this.speed = 0; // Tốc độ chạy 0km / h
+    }
+    run(speed) {
+        this.speed = speed;
+        alert(`${this.name} chạy tốc độ là ${this.speed}.`);
+    }
+    stop() {
+        this.speed = 0;
+        alert(`${this.name} đứng yên.`);
+    }
+}
+class Lion extends Animal{
+    roar(){
+        alert(`${this.name} đang gầm`);
+    }
+}
+ 
+let lion = new Lion("Sử tử");
+lion.run(80);
+lion.stop();
+lion.roar();
+class Animal {
+    constructor(name) {
+        console.log('Hàm khởi tạo lớp cha');
+    }
+}
+ 
+class Rabbit extends Animal {
+    constructor(name, age) {
+        super(name);
+        console.log('Hàm khởi tạo lớp con');
+    }
+}
+ 
+let rabbit = new Rabbit();

@@ -24,7 +24,7 @@ sudo chmod -R 0777 /tmp
 adb reverse tcp:8081 tcp:8081
 sudo ./gradlew --stop
 sudo ./gradlew clean
-
+sudo ln -s "$(which node)" /usr/local/bin/node
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 
 source ~/.profile

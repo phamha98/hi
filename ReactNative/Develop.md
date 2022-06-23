@@ -13,6 +13,13 @@ npm install --legacy-peer-deps
 npm install --save-dev jetifier
 npx jetify
 
+How to downgrade Node version
+$ npm install -g n
+$ n 6.10.3
+$ node -v
+v6.10.3
+
+
 react-native run-android --deviceId=emulator-5554
 emulator --list-avds
 adb devices -l

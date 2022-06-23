@@ -9,7 +9,7 @@ ssh-keygen
 sudo chmod -R /user/path
 
 sudo ./gradlew cleanBuildCache
-
+npm install --legacy-peer-deps
 npm install --save-dev jetifier
 npx jetify
 

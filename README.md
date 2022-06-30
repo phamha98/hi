@@ -5,7 +5,7 @@
 [develop]: https://github.com/phamha98/hi/blob/master/ReactNative/Develop.md
 
 # [Tải xuống asahi][asahi]
-[asahi]:https://drive.google.com/file/d/1DiKMX0T7eeA7QYdvyPybQsAtVYo_7_Fy/view?usp=sharing
+[asahi]:https://drive.google.com/file/d/1S3bZEEzybK1sKEUUUSwEzIL78UW7aGEG/view?usp=sharing
 
 # [Tải xuống bdc-admin][bdc-admin]
 [bdc-admin]: https://drive.google.com/file/d/1qwoAnlR1F2Jf91czDnTVivSgO8Otze2k/view?usp=sharing

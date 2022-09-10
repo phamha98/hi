@@ -1,0 +1,3 @@
+cd ~/Library/Preferences/SmartGit/
+sed -i '' '/listx/d' ./*/preferences.yml
+rm */license

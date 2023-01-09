@@ -1,18 +1,15 @@
+A: native
 ```xml
         <intent-filter>
-            <action android:name="android.intent.action.VIEW" />
-            <category android:name="android.intent.category.DEFAULT" />
-            <category android:name="android.intent.category.BROWSABLE" />
-            <!-- <data android:scheme="mychat" />
-            <data android:scheme="https" android:host="www.example.com" />
-            <data android:scheme="http" android:host="www.example.com" /> -->
-            <data
-              android:host="app"
-              android:scheme="demo" />
-        </intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="ten_app" />
+            </intent-filter>
 
 ```
 
+B: JS
 
 ```js
 const config = {

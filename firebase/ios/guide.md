@@ -1,3 +1,5 @@
+FIREBASE #IOS FIREBASEIOS  #Certificate #P12
+
 1. Create file *.certSigningRequest
 -Open Keychain Access
 -Tabbar 

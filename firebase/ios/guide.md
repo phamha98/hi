@@ -52,5 +52,8 @@ open file aps*.cer by Keychain Access
     Apple APNs certificate
     Certificate password ?
     Upload
-    
+
+
+///Link tham khao
+https://guide.pushdy.com/i/cai-dat/cach-tao-ios-push-certificate
 

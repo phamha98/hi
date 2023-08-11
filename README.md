@@ -5,7 +5,7 @@ https://github.com/phamha98/hi/blob/master/ReactNative/Develop.md
  https://github.com/phamha98/hi/blob/master/ReactNative/Code2.md
 
 
-```bash
+```shell
 pm2 list
 
 pm2 start app.js
@@ -30,4 +30,12 @@ pm2 start app.js -i <number_of_instances>
 https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/
 
 
+```
+
+```gradle
+subprojects { subproject ->
+    if(project['name'] == 'react-native-reanimated'){
+        project.configurations { compile { } }
+    }
+}
 ```

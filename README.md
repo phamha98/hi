@@ -1,4 +1,6 @@
 ```shell
+https://www.tensorflow.org/
+
 yum install mariadb-server mariadb-libs mariadb
 sudo systemctl start mariadb
 brew services restart redis

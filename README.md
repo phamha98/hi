@@ -23,6 +23,7 @@ sudo systemctl start firewalld
 firewall-cmd --zone=public --add-port=3306/tcp
 sudo firewall-cmd --list-ports
 
+adb -s emulator-5554 install myapp.apk
 adb reverse tcp:8081 tcp:8081
 adb devices
 adb -s emulator-5554 reverse tcp:9090 tcp:9090

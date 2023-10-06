@@ -1,4 +1,9 @@
 ```shell
+
+xcrun simctl erase  12F1624A-B635-438A-9F81-8B3A0DC81191
+xcrun simctl erase all
+xcrun simctl list
+
 https://www.tensorflow.org/
 
 yum install mariadb-server mariadb-libs mariadb

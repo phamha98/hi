@@ -87,4 +87,4 @@ subprojects { subproject ->
  https://github.com/phamha98/hi/blob/master/ReactNative/Code2.md
 
 
->>>>>>> 3643a3e0d3c9c9e0754a47680fedda4d0f7170ee
+ 

@@ -391,3 +391,14 @@ FLIPPER
 sudo snap install flipper --edge
 
 https://www.facebook.com/fbflipper/public/linux
+# new
+
+```bash
+PS1='\[\033[01;33m\]\t:\[\033[01;34m\]\W\[\033[00m\]\$ '
+```
+
+## old
+
+```bash
+#PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+```

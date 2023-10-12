@@ -105,4 +105,4 @@ implementation 'com.facebook.fresco:animated-gif:2.0.0'
 
 [Attempt to invoke interface method 'boolean com.swamansion.reanimated.layoutReanimation.NativeMethodsHolder.isLayoutAnimationE]()
 
-![animated screenshot of a swipeable flatlist email inbox mockup using react-native-swipeable-list](../image/Screenshot_1639537086.png)
+![animated screenshot of a swipeable flatlist email inbox mockup using react-native-swipeable-list] 

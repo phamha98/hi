@@ -1,2 +1,0 @@
-sudo chmod -R 777 /Users/sharatakasapu/{your node module path}
-rm -rf /folder

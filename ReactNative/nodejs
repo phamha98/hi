@@ -1,5 +1,0 @@
-node_modules/metro/src/Server.js:350  processRequest = (req, res, next) => {
-
-
-Lỗi do hệ thống có hai phiên bản node
-Lỗi do androidStudio không nhận version nvm node 16.13.1 mà nhận version khác 10.19.0 

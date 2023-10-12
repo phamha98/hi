@@ -28,6 +28,9 @@ sudo systemctl start firewalld
 firewall-cmd --zone=public --add-port=3306/tcp
 sudo firewall-cmd --list-ports
 
+
+
+
 adb -s emulator-5554 install myapp.apk
 adb reverse tcp:8081 tcp:8081
 adb devices
@@ -35,6 +38,17 @@ adb -s emulator-5554 reverse tcp:9090 tcp:9090
 adb shell input keyevent 82
 #code=82
 adb -s emulator-5554 shell input keyevent 82
+adb devices
+adb kill-server
+adb start-server
+
+
+
+./gradlew --stop #(in MacOS)
+./gradlew cleanBuildCache #(in MacOS)
+rm -rf /tmp/metro-*
+chmod -R 0777 /tmp
+
 
 pm2 list
 pm2 start app.js

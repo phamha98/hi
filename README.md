@@ -79,7 +79,7 @@ subprojects { subproject ->
 .kotlin_module: Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 1.6.0, expected version is 1.1.15.
 
 ```
-
+# NEXT...
 
  https://github.com/phamha98/hi/blob/master/ReactNative/Develop.md
  https://github.com/phamha98/hi/blob/master/ReactNative/Npm.md

@@ -54,9 +54,23 @@ pm2 update
 
 ```
 
+```gradle
+subprojects { subproject ->
+    if(project['name'] == 'react-native-reanimated'){
+        project.configurations { compile { } }
+    }
+}
+```
+```
+.kotlin_module: Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 1.6.0, expected version is 1.1.15.
+
+```
+
 
  https://github.com/phamha98/hi/blob/master/ReactNative/Develop.md
  https://github.com/phamha98/hi/blob/master/ReactNative/Npm.md
  https://github.com/phamha98/hi/blob/master/ReactNative/Code.md
  https://github.com/phamha98/hi/blob/master/ReactNative/Code2.md
 
+
+>>>>>>> 3643a3e0d3c9c9e0754a47680fedda4d0f7170ee

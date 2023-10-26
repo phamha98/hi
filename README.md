@@ -1,5 +1,7 @@
 ```shell
 npx  react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
+```
+```shell
 
 
 xcrun simctl erase  12F1624A-B635-438A-9F81-8B3A0DC81191
@@ -30,8 +32,8 @@ sudo systemctl start firewalld
 firewall-cmd --zone=public --add-port=3306/tcp
 sudo firewall-cmd --list-ports
 
-
-
+```
+```shell
 
 adb -s emulator-5554 install myapp.apk
 adb reverse tcp:8081 tcp:8081
@@ -51,7 +53,8 @@ adb start-server
 rm -rf /tmp/metro-*
 chmod -R 0777 /tmp
 
-
+```
+```shell
 pm2 list
 pm2 start app.js
 pm2 start app.js --name "my-app"

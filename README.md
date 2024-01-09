@@ -1,4 +1,7 @@
 ```shell
+nvm alias default 18
+```
+```shell
 adb reverse tcp:8081 tcp:8081
 ```
 

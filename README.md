@@ -1,6 +1,7 @@
 ```shell
 nvm alias default 18
 ```
+
 ```shell
 adb reverse tcp:8081 tcp:8081
 ```
@@ -9,6 +10,7 @@ adb reverse tcp:8081 tcp:8081
 npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle
 
 ```
+
 ```shell
 
 
@@ -41,6 +43,7 @@ firewall-cmd --zone=public --add-port=3306/tcp
 sudo firewall-cmd --list-ports
 
 ```
+
 ```shell
 
 adb -s emulator-5554 install myapp.apk
@@ -62,6 +65,19 @@ rm -rf /tmp/metro-*
 chmod -R 0777 /tmp
 
 ```
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
 ```shell
 pm2 list
 pm2 start app.js
@@ -88,14 +104,13 @@ subprojects { subproject ->
     }
 }
 ```
+
 ```
 .kotlin_module: Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 1.6.0, expected version is 1.1.15.
 
 ```
+
 # NEXT...
 
- https://github.com/phamha98/hi/blob/master/Toturial.md
- https://github.com/phamha98/hi/blob/master/ReactNative/Npm.md  
-
-
- 
+https://github.com/phamha98/hi/blob/master/Toturial.md
+https://github.com/phamha98/hi/blob/master/ReactNative/Npm.md

@@ -1,19 +1,20 @@
 ```shell
 nvm alias default 18
 ```
+<br><br>
 
 ```shell
 adb reverse tcp:8081 tcp:8081
 ```
+<br><br>
 
 ```shell
 npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle
 
 ```
+<br><br>
 
 ```shell
-
-
 xcrun simctl erase  12F1624A-B635-438A-9F81-8B3A0DC81191
 xcrun simctl erase all
 xcrun simctl list
@@ -97,12 +98,14 @@ subprojects { subproject ->
 }
 ```
 
-```
-.kotlin_module: Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 1.6.0, expected version is 1.1.15.
-
-```
+ <br><br><br><br><br><br>
 
 # NEXT...
 
 https://github.com/phamha98/hi/blob/master/Toturial.md
+<br>
+<br>
+https://github.com/phamha98/hi/blob/master/ReactNative/Npm.md
+<br>
+<br>
 https://github.com/phamha98/hi/blob/master/ReactNative/Npm.md

@@ -31,6 +31,9 @@ module.exports = mongoose => {
     return group;
 };
 
+const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
+const Breadcrumbs = React.lazy(() => import('./views/base/breadcrumbs/Breadcrumbs'))
 
 
 ```
+ 

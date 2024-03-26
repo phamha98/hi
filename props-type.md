@@ -34,6 +34,15 @@ module.exports = mongoose => {
 const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
 const Breadcrumbs = React.lazy(() => import('./views/base/breadcrumbs/Breadcrumbs'))
 
+function checkIfUpdateNeeded(
+  currentVersion,
+  latestVersion,
+  option,
+  providerStoreUrl
+) {
+   
+  return Promise.resolve(response);
+}
 
 ```
  

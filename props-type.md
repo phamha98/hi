@@ -44,5 +44,13 @@ function checkIfUpdateNeeded(
   return Promise.resolve(response);
 }
 
+
 ```
  
+ ```ts
+ type AuthProviderMockProps = {
+  [K in keyof CreateAuthProviderMockProps]-?: NonNullable<
+    CreateAuthProviderMockProps[K]
+  >;
+};
+ ```

@@ -19,6 +19,15 @@ sudo xcode-select --switch /Applications/Xcode.app
 ```
 <br>
 
+```sh
+diff -u node_modules/module-name/example.js modified/example.js > my-patch.patch
+patch -p0 < my-patch.patch
+
+
+
+```
+<br>
+
 
 ```shell
 xcrun simctl erase  12F1624A-B635-438A-9F81-8B3A0DC81191

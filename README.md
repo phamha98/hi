@@ -1,18 +1,24 @@
 ```shell
 nvm alias default 18
 ```
-<br><br>
+<br>
 
 ```shell
 adb reverse tcp:8081 tcp:8081
 ```
-<br><br>
+<br>
 
 ```shell
 npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle
 
 ```
-<br><br>
+<br>
+
+```shell
+sudo xcode-select --switch /Applications/Xcode.app
+```
+<br>
+
 
 ```shell
 xcrun simctl erase  12F1624A-B635-438A-9F81-8B3A0DC81191

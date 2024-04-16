@@ -23,7 +23,15 @@ sudo xcode-select --switch /Applications/Xcode.app
 diff -u node_modules/module-name/example.js modified/example.js > my-patch.patch
 patch -p0 < my-patch.patch
 
+git stash list
+git diff stash@{0} > my_stash.patch
+git apply my_stash.patch
 
+
+///Áp dụng Stash và Tạo Patch
+git stash apply
+git stash show -p > my_stash.patch
+///
 
 ```
 <br>

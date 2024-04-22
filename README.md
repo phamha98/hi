@@ -135,6 +135,15 @@ https://qqqq -d '{"message":{"_id":"sadsda","rid":"sadsadsad","msg":"Dssad","tsh
 done
 ```
 
+```sh
+##*.http
+### Get User Profile Request
+GET https://jsonplaceholder.typicode.com/todos 
+Authorization: 
+
+```
+
+
  <br><br><br><br><br><br>
 
 # NEXT...

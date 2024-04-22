@@ -121,6 +121,20 @@ subprojects { subproject ->
 }
 ```
 
+```sh
+
+curl -X POST  -H "content-type:application/json" -H "user-agent:RC Mobile; ios 17.2; v1.1.50 (2023080386)" https://abv -d '{ }' |    jq
+
+
+for i in {1..100}; do
+curl -X POST  -H "content-type:application/json" \
+ -H "user-agent:RC Mobile; ios 17.2; v1.1.50 (2023080386)" \
+-H "x-auth-token:asdsadasdsadasd" \
+-H "x-user-id:asdasdsad" \
+https://qqqq -d '{"message":{"_id":"sadsda","rid":"sadsadsad","msg":"Dssad","tshow":false}}' | jq
+done
+```
+
  <br><br><br><br><br><br>
 
 # NEXT...

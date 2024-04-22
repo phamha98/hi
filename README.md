@@ -142,7 +142,36 @@ GET https://jsonplaceholder.typicode.com/todos
 Authorization: 
 
 ```
+```js
+import http from 'k6/http';
 
+export default function () {
+    // Chuỗi JSON chứa dữ liệu yêu cầu
+    let data = {
+        message: {
+            
+            rid: "12312312",
+            
+        }
+    };
+
+    // Header của yêu cầu
+    let headers = {
+        'Content-Type': 'application/json',
+         
+        'x-auth-token': '213123',
+        'x-user-id': '213213213'
+    };
+
+    // Gửi yêu cầu POST với dữ liệu và header tương ứng
+    let res = http.post('https://21321321321', JSON.stringify(data), { headers: headers });
+
+    // Log kết quả của yêu cầu
+    console.log('Response status:', res.status);
+}
+
+
+```
 
  <br><br><br><br><br><br>
 

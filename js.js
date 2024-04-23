@@ -99,3 +99,53 @@ let proxy = new Proxy(student, {
    let newFn = getName.bind(user, hobbies[0], hobbies[1]); 
    
    newFn();
+   /**
+    * Symbol
+    */
+   let id1 = Symbol("id");
+
+   /*
+    * Tìm trong Global một Symbol với key là "id".
+    * Nếu Symbol chưa tồn tại thì tạo mới một Symbol
+    */
+   let id2 = Symbol.for("id");
+   
+   /*
+    * Tiếp tục tìm trong Global một Symbol với key là "id".
+    * Lần này thì Symbol đã tồn tại rồi, nên sẽ trả về Symbol trên.
+    */
+   let id3 = Symbol.for("id");
+   
+   // Kết quả
+   console.log(id1 === id2); // => false
+   console.log(id2 === id3); // => true
+
+//Ung dung key object
+const id = Symbol("id");
+const obj = {
+  [id]: "abc123",
+};
+
+console.log(obj);
+// => {Symbol(id): "abc123"}
+
+console.log( typeof null);//object
+let arr=[1,2,3,4]
+arr.at(2)//3
+
+
+const arr2 = [0, 1, [2, [3, [4, 5]]]];
+console.log(arr2.flat(Infinity));
+//[0, 1, 2, 3, 4, 5]
+
+ 
+/**
+ * chunk><flat 
+ * some><every
+ * toReversed&&reversed();sort
+ * with & splice
+ * include & find 
+ * 
+ * 
+ * 
+ */

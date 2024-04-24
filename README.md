@@ -1,4 +1,7 @@
 ```shell
+env | grep ARCHS
+```
+```shell
 nvm alias default 18
 ```
 <br>

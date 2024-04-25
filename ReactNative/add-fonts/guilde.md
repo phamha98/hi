@@ -1,4 +1,4 @@
-1. create folder : assest/fonts
+1. create folder : assest/fonts/MyFonts.ttf
 2. create file : react-native.config.js
 ```js
 module.exports = {
@@ -10,14 +10,20 @@ module.exports = {
 };
 ```
 
-3. create folder Fonts/*.ttf insert MyApp/MyApp/Fonts
-4. create folder android/app/main/assest/fonts/
+3. Xcode create folder Fonts/*.ttf insert MyApp/MyApp/Fonts/MyFonts.ttf
+4. 
+```Info.plist 
+<key>UIAppFonts</key>
+<array>
+<string>MyFonts.ttf</string>
+</array>
+```
+4. create folder android/app/main/assest/fonts/MyFonts.ttf
 5. example
 ```js
 const styles = StyleSheet.create({
   hello: {
-    fontFamily: 'Pacifico-Regular',
-    fontSize: 30
+    fontFamily: 'MyFonts',
   }
 })
 ```

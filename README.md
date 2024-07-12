@@ -19,6 +19,10 @@ npx react-native bundle --platform android --dev false --entry-file index.js --b
 
 ```shell
 sudo xcode-select --switch /Applications/Xcode.app
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
+xcode-select --install
+sudo xcodebuild -license
 ```
 <br>
 

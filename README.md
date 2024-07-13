@@ -176,7 +176,7 @@ export default function () {
     // Log kết quả của yêu cầu
     console.log('Response status:', res.status);
 }
-
+arch -x86_64 pod install
 
 ```
 

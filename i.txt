@@ -1,34 +1,24 @@
-```sh
+
 
 XAMPP
 sudo /opt/lampp/lampp start
 php artisan serve  --host=192.168.0.103 --port=8001
 sudo apt install net-tools
-```
 emulator-window
-```sh
 alias oen=/home/phamha/emu.sh
 emu.sh
 emulator  @Pixel_3_API_30
 emu ...
 git add . && git commit -m "update one " && git push
-```
-
-# 🚀 cmd
-
-```cmd
 sudo rm -rf /tmp/metro-*
 npm start --reset-cache
-
 git add . && git commit -m "" && git push
 ssh-keygen
 sudo chmod -R /user/path
-
 sudo ./gradlew cleanBuildCache
 npm install --legacy-peer-deps
 npm install --save-dev jetifier
 npx jetify
-
 How to downgrade Node version?
 $ npm install -g n
 $ n 6.10.3
@@ -36,7 +26,6 @@ $ node -v
 v6.10.3
 Update latest
 sudo n latest
-
 react-native run-android --deviceId=emulator-5554
 emulator --list-avds
 adb devices -l
@@ -66,28 +55,18 @@ appcenter login
 npx react-native run-android --variant=release
 cd android && ./gradlew assembleRelease
 sudo ln -s $(which node) /usr/local/bin/node
-
-
-```
-
-```gradle
+gradle
     applicationVariants.all { variant ->
         variant.outputs.all { output ->
             def formattedDate = new Date().format('HHmmss_DDMMYY')
             outputFileName = "ApplicationName-${variant.name}-v${variant.versionName}-v${defaultConfig.versionCode}-time_${formattedDate}.apk"
         }
     }
-```
 
 - error: processRequest = (req, res, next) => {
 
-```
 sudo ln -s $(which node) /usr/local/bin/node
-```
-
 - remove node
-
-```
 sudo rm -rf /usr/local/bin/npm /usr/local/share/man/man1/node* ~/.npm
 sudo rm -rf /usr/local/lib/node*
 sudo rm -rf /usr/local/bin/node*
@@ -95,21 +74,15 @@ sudo rm -rf /usr/local/include/node*
 
 sudo apt-get purge nodejs npm
 sudo apt autoremove
-```
-
 - node nvm
-
-```
 sudo apt install wget
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 source ~/.profile
 nvm ls-remote
 nvm install 16.15.1
-```
 
 - node apt
 
-```
 sudo apt install nodejs
 sudo apt install npm  -y
 sudo npm i  install -g react-native-cli
@@ -151,7 +124,7 @@ npm i babel-plugin-wildcard &&
 
 
 react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
-```
+
 
 <h3 style="color:red">processRequest = (req, res, next) => {</h3>
 <h3 style="color:red">sudo ln -s $(which node) /usr/local/bin/node</h3>
@@ -163,34 +136,35 @@ react-native bundle --platform android --dev false --entry-file index.js --bundl
 [setting adb win]()
 add System variables\Path
 
-```
+
 C:\Users\USERNAME\AppData\Local\Android\sdk\platform-tools.
-```
+
 
 [get Id]()
 
-```
-adb devices -l
-```
 
-```
+
+adb devices -l
+
+
+
 adb -s emulator-5554 shell
 adb -s emulator-5555 install helloWorld.apk
-```
 
-```
+
+
 react-native run-android --deviceId=emulator-5556
-```
 
-```
+
+
 react-native run-android --deviceId=emulator-5554
-```
+
 
 https://developer.android.com/studio/command-line/adb#directingcommands
 
-```
+
 npx react-native start --port 8083
-```
+
 
 - url: http://localhost:8081/debugger-ui
 - zoom ==>crtl+ (up)
@@ -204,118 +178,118 @@ npx react-native start --port 8083
 - Set the Preferred and Alternate DNS servers as (Screenshot below) :
 - Use the following DNS server address
 
-```
+
 8.8.8.8
 8.8.4.4
-```
+
 
 - ===>share config net
 
-```
+
 emulator -avd Pixel_5_API_30 -gpu host -dns-server 8.8.8.8
-```
+
 
 🚀 https://stackoverflow.com/questions/50670547/android-studio-android-emulator-wifi-connected-with-no-internet
 https://i.stack.imgur.com/JBHPe.png
 
 # 🚀 Gradle
 
-```
+
 sudo ./gradlew clean
-```
+
 
 [sudo: ./gradlew: command not found]()
 
-```
+
 sudo chmod +x ./gradlew
-```
+
 
 Error: spawn ./gradlew EACCES
 
-```
+
 sudo chmod 755 android/gradlew
-```
 
-```
+
+
 rm -rf /tmp/metro-*
-```
 
-```
+
+
 chmod -R 0777 /tmp
-```
+
 
 # 🚀adb
 
-```
-adb reverse tcp:8081 tcp:8081
-```
 
-```
+adb reverse tcp:8081 tcp:8081
+
+
+
 adb devices
 adb kill-server
 adb start-server
-```
+
 
 [gradle.properties]()
 
-```
+
 # org.gradle.jvmargs=-Xmx4096m -XX:MaxPermSize=4096m -XX:+HeapDumpOnOutOfMemoryError
 # thay the 001
 org.gradle.jvmargs=-Xmx1536M
-```
+
 
 [https://stackoverflow.com/questions/23081263/adb-android-device-unauthorized]()
 
-```
+
 ./gradlew --stop (in MacOS)
 ./gradlew cleanBuildCache (in MacOS)
-```
 
-```
+
+
 sudo + find error ./gradlew signingReport
-```
+
 
 # 🚀 node-npm
 
-```
+
 npm i -g npm@latest
 sudo npm cache clean -f
-```
+
 
 🚀 [https://phoenixnap.com/kb/update-node-js-version]()
 
 - Clear cache
 
-```
+
 rm -rf /tmp/metro-*
 chmod -R 0777 /tmp
 adb reverse tcp:8081 tcp:8081
-```
+
 
 - https://stackoverflow.com/questions/42768354/react-native-could-no-connect-to-development-server-in-createreactcontext
 
 ## 🚀 install node -nvm ubuntu
 
-```
+
 sudo apt install wget
-```
 
-```
+
+
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
-```
 
-```
+
+
 source ~/.profile
 nvm ls-remote
 nvm install 16.15.1
-```
+
 # 🚀 react-native-video
-```
+
 allproject
 jenen()
-```
+
 ## 🚀 useImperativeHandle
-```js
+js
 useImperativeHandle(ref, () => ({
     getValue () {
       if (isEmpty(value)) return ''
@@ -325,22 +299,22 @@ useImperativeHandle(ref, () => ({
       setValue('')
     },
   }))
-```
+
 ## 🚀 using-async-storage-in-react-native (default -android 6M)
 https://github.com/ptmt/using-async-storage-in-react-native/blob/master/Readme.md#database-or-disk-is-full
 
 add 
-```
-import com.facebook.react.modules.storage.ReactDatabaseSupplier;
-```
 
-```java
+import com.facebook.react.modules.storage.ReactDatabaseSupplier;
+
+
+java
 long size = 50L * 1024L * 1024L; // 50 MB
 
 com.facebook.react.modules.storage.ReactDatabaseSupplier
   .getInstance(getApplicationContext())
   .setMaximumSize(size);
-```
+
 
 [huong dan]()
 
@@ -380,8 +354,7 @@ https://github.com/esthor/react-native-swipeable-list
 ![animated screenshot of a swipeable flatlist email inbox mockup using react-native-swipeable-list](../images/react-native-swipeable-list-demo2.gif)
 
 
-```js
+js
 import { NativeModules } from 'react-native';
 const { RNRestart } = NativeModules;
 RNRestart.Restart()
-```

@@ -358,3 +358,18 @@ js
 import { NativeModules } from 'react-native';
 const { RNRestart } = NativeModules;
 RNRestart.Restart()
+
+Rediss
+which redis
+redis-cli
+KEYS *
+TTL "key"
+cat /etc/redis/redis.conf
+nano /etc/flexisip/flexisip.conf
+min-expres=60
+
+
+
+
+
+

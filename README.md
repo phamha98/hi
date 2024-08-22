@@ -13,6 +13,8 @@ npx react-native start --port 8082
 
 ```shell
 adb reverse tcp:8081 tcp:8081
+adb -s emulator-5554 reverse tcp:8081 tcp:8081
+adb -s emulator-5556 reverse tcp:8081 tcp:8081 
 ```
 <br>
 

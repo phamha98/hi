@@ -1,4 +1,7 @@
+
 ```shell
+rm -rf ~/Library/Developer/Xcode/DerivedData/*
+rm -rf ~/Library/Caches/org.swift.swiftpm
 env | grep ARCHS
 ```
 ```shell

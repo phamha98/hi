@@ -1,5 +1,8 @@
 
 ```shell
+open  terminal mac  from terminal vscode
+=>open -a Terminal .
+
 open xcode  ...=> xed .
 open vscode  ...=> code .
 ??vscode->"Shell Command: Install 'code' command in PATH"

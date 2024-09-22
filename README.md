@@ -2,11 +2,14 @@
 ```shell
 open  terminal mac  from terminal vscode
 =>open -a Terminal .
+=>open -a Simulator
+=>xcrun simctl list
+=>xcrun simctl boot <UDID>
 
 open xcode  ...=> xed .
 open vscode  ...=> code .
 ??vscode->"Shell Command: Install 'code' command in PATH"
- 
+
 
 rm -rf ~/Library/Developer/Xcode/DerivedData/*
 rm -rf ~/Library/Caches/org.swift.swiftpm

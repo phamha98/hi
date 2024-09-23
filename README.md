@@ -1,5 +1,15 @@
 
 ```shell
+npm install -g javascript-obfuscator
+
+javascript-obfuscator src/ --output dist/
+
+{
+  "scripts": {
+    "obfuscate": "javascript-obfuscator src/ --output dist/"
+  }
+}
+
 open  terminal mac  from terminal vscode
 =>open -a Terminal .
 =>open -a Simulator

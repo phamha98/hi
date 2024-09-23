@@ -1,5 +1,12 @@
 
 ```shell
+*.js
+get FlatList(): AnimatedFlatList {
+    return require('./components/AnimatedFlatList').default;
+  },
+
+npm install --save-dev flow-bin
+yarn add --dev flow-bin
 npm install -g javascript-obfuscator
 
 javascript-obfuscator src/ --output dist/

@@ -1,4 +1,15 @@
-
+```js
+const get = (a = 1) => {
+  let sum = a;
+  const inner = (b) => {
+    sum += b;
+    console.log('=>>>', sum);
+    return inner;
+  };
+  return inner;
+};
+get(2)(4)(7)(8)(9)(3)
+```
 ```shell
 *.js
 get FlatList(): AnimatedFlatList {

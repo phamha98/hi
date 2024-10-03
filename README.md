@@ -38,8 +38,8 @@ open vscode  ...=> code .
 ??vscode->"Shell Command: Install 'code' command in PATH"
 
 
-rm -rf ~/Library/Developer/Xcode/DerivedData/*
-rm -rf ~/Library/Caches/org.swift.swiftpm
+sudo rm -rf ~/Library/Developer/Xcode/DerivedData/*
+sudo rm -rf ~/Library/Caches/org.swift.swiftpm
 env | grep ARCHS
 ```
 ```shell

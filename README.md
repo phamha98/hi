@@ -1,3 +1,4 @@
+### Function chaining
 ```js
 const get = (a = 1) => {
   let sum = a;
@@ -42,8 +43,10 @@ sudo rm -rf ~/Library/Developer/Xcode/DerivedData/*
 sudo rm -rf ~/Library/Caches/org.swift.swiftpm
 env | grep ARCHS
 ```
+### Nvm 
 ```shell
 nvm alias default 18
+nvm use 18
 ```
 <br>
 
@@ -82,11 +85,8 @@ git stash list
 git diff stash@{0} > my_stash.patch
 git apply my_stash.patch
 
-
-///Áp dụng Stash và Tạo Patch
 git stash apply
 git stash show -p > my_stash.patch
-///
 
 ```
 <br>

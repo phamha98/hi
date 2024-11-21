@@ -230,20 +230,9 @@ arch -x86_64 pod install
 
  <br><br><br><br><br><br>
 
-# NEXT...
-
-https://github.com/phamha98/hi/blob/master/Toturial.md
-<br>
-<br>
-https://github.com/phamha98/hi/blob/master/ReactNative/Npm.md
-<br>
-<br>
-https://github.com/phamha98/hi/blob/master/ReactNative/Npm.md
-
+### DOCS
 
 https://developer.apple.com/library/archive/navigation/
-
 https://developer.apple.com/contact/request/unlisted-app/
-
 https://developer.apple.com/library/archive/navigation/
-///comment
+

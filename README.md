@@ -1,3 +1,15 @@
+###Auto Reveal in Explorer View (Vscode)
+```json
+{
+"explorer.autoReveal": true,
+  "explorer.autoRevealExclude": {
+    "**/node_modules": false,
+    "**/bower_components": false
+  },
+}
+```
+https://github.com/microsoft/vscode/issues/168408#issuecomment-1342513210
+
 ### Function chaining
 ```js
 const get = (a = 1) => {

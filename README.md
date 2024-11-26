@@ -1,8 +1,8 @@
 ```js
-const readThread = useDebounce(async () => {
+const getData = useDebounce(async () => {
 		if (tmid) {
 			try {
-				await Services.readThreads(tmid);
+				await fetch.api();
 			} catch {
 				// Do nothing
 			}

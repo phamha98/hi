@@ -1,3 +1,8 @@
+```sh
+xcrun simctl list devices
+xcrun xctrace list devices
+```
+
 ```js
 const getData = useDebounce(async () => {
 		if (tmid) {

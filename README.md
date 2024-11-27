@@ -1,3 +1,24 @@
+```js
+//await in while
+while (true) {
+            await driver.execute('mobile: swipe', {
+                direction: 'up',
+                // startX: 800,
+                // startY: 350,
+                // endX: 800,
+                // endY: 1000,
+                startX: 800,
+                startY: 1000,
+                endX: 800,
+                endY: 350,
+                duration: 50
+            });
+            await new Promise(res => setTimeout(res, 500));
+        }
+
+```
+
+
 ```sh
 xcrun simctl list devices
 xcrun xctrace list devices

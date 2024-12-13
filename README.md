@@ -1,4 +1,10 @@
 ```js
+console.debug(Object.fromEntries(new URLSearchParams(URL)))
+console.debug(new URLSearchParams(params).toString())
+
+```
+
+```js
 //await in while
 while (true) {
             await driver.execute('mobile: swipe', {

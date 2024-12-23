@@ -6,21 +6,8 @@ let params = { a: '2', b: '23' }
 console.debug(new URLSearchParams(params).toString())
 
 ```
-## Appium
-```js
-while (true) {
-	await driver.execute('mobile: swipe', {
-	    direction: 'up',
-	    startX: 800,
-	    startY: 1000,
-	    endX: 800,
-	    endY: 350,
-	    duration: 50
-	});
-	await new Promise(res => setTimeout(res, 500));
-}
+## [Appium](https://github.com/phamha98/hi/blob/master/typescript.md?plain=1#L79-L93)
 
-```
 
 ## xcrun
 ```sh

@@ -58,6 +58,7 @@ const get = (a = 1) => {
 };
 get(2)(4)(7)(8)(9)(3)
 ```
+```ts
 *.js
 get FlatList(): AnimatedFlatList {
     return require('./components/AnimatedFlatList').default;
@@ -73,3 +74,20 @@ javascript-obfuscator src/ --output dist/
     "obfuscate": "javascript-obfuscator src/ --output dist/"
   }
 }
+```
+
+## Appium
+```js
+while (true) {
+	await driver.execute('mobile: swipe', {
+	    direction: 'up',
+	    startX: 800,
+	    startY: 1000,
+	    endX: 800,
+	    endY: 350,
+	    duration: 50
+	});
+	await new Promise(res => setTimeout(res, 500));
+}
+
+```

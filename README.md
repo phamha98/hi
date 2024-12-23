@@ -1,35 +1,33 @@
+## URL
 ```js
-console.debug(Object.fromEntries(new URLSearchParams(URL)))
+let url = "a=2&b=23"
+console.debug(Object.fromEntries(new URLSearchParams(url)))
+let params = { a: '2', b: '23' }
 console.debug(new URLSearchParams(params).toString())
 
 ```
-
+## Appium
 ```js
-//await in while
 while (true) {
-            await driver.execute('mobile: swipe', {
-                direction: 'up',
-                // startX: 800,
-                // startY: 350,
-                // endX: 800,
-                // endY: 1000,
-                startX: 800,
-                startY: 1000,
-                endX: 800,
-                endY: 350,
-                duration: 50
-            });
-            await new Promise(res => setTimeout(res, 500));
-        }
+	await driver.execute('mobile: swipe', {
+	    direction: 'up',
+	    startX: 800,
+	    startY: 1000,
+	    endX: 800,
+	    endY: 350,
+	    duration: 50
+	});
+	await new Promise(res => setTimeout(res, 500));
+}
 
 ```
 
-
+## xcrun
 ```sh
 xcrun simctl list devices
 xcrun xctrace list devices
 ```
-
+## Debounce
 ```js
 const getData = useDebounce(async () => {
 		if (tmid) {
@@ -78,8 +76,12 @@ export function debounce(func: Function, wait?: number, immediate?: boolean) {
 
 ```
 
+<h2 style="color:green">Auto Reveal in Explorer View (Vscode)</h2>
+<img src="https://i.pinimg.com/474x/ca/7e/17/ca7e17a6e4bfcbad483aae32c538ef59.jpg" alt="Placeholder Image" width="300" height="200">
+ 
+![Placeholder Image](https://i.pinimg.com/474x/ca/7e/17/ca7e17a6e4bfcbad483aae32c538ef59.jpg)
 
-###Auto Reveal in Explorer View (Vscode)
+## Auto Reveal in Explorer View (Vscode)
 ```json
 {
 "explorer.autoReveal": true,

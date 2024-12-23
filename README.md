@@ -75,7 +75,7 @@ export function debounce(func: Function, wait?: number, immediate?: boolean) {
 	);
 
 ```
-
+## <span style="color: blue;">Tiêu đề cấp 2 màu xanh</span>
 <h2 style="color:green">Auto Reveal in Explorer View (Vscode)</h2>
 <img src="https://i.pinimg.com/474x/ca/7e/17/ca7e17a6e4bfcbad483aae32c538ef59.jpg"style="width: 150px; height: auto;">
  

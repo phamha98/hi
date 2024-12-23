@@ -31,7 +31,7 @@ xcrun simctl erase all
 xcrun simctl list
 ```
 ## Debounce
-[Go to line 10](https://github.com/phamha98/hi/blob/master/typescript.md#L100)
+[Go to line 10](https://github.com/phamha98/hi/blob/master/typescript.md#L30)
 
 
 ```js

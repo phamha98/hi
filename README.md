@@ -77,10 +77,9 @@ export function debounce(func: Function, wait?: number, immediate?: boolean) {
 ```
 
 <h2 style="color:green">Auto Reveal in Explorer View (Vscode)</h2>
-<img src="https://i.pinimg.com/474x/ca/7e/17/ca7e17a6e4bfcbad483aae32c538ef59.jpg" alt="Placeholder Image" width="300" height="200">
+<img src="https://i.pinimg.com/474x/ca/7e/17/ca7e17a6e4bfcbad483aae32c538ef59.jpg" alt="Placeholder Image" width="100" height="100">
  
-![Placeholder Image](https://i.pinimg.com/474x/ca/7e/17/ca7e17a6e4bfcbad483aae32c538ef59.jpg)
-
+ 
 ## Auto Reveal in Explorer View (Vscode)
 ```json
 {

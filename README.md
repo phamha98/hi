@@ -33,7 +33,7 @@ xcrun simctl list
 ## [Debounce](https://github.com/phamha98/hi/blob/master/typescript.md?plain=1#L1-L46)
 
  
-## [🔴 Auto Reveal in Explorer View (Vscode)](https://github.com/phamha98/hi/blob/master/vscode.md?plain=1#L82-L91)
+### [Auto Reveal in Explorer View (Vscode)](https://github.com/phamha98/hi/blob/master/vscode.md?plain=1#L82-L91)
 
 https://github.com/microsoft/vscode/issues/168408#issuecomment-1342513210
 

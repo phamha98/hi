@@ -48,19 +48,9 @@ xcrun simctl list
 ```
 https://github.com/microsoft/vscode/issues/168408#issuecomment-1342513210
 
-## Function chaining
-```js
-const get = (a = 1) => {
-  let sum = a;
-  const inner = (b) => {
-    sum += b;
-    console.log('=>>>', sum);
-    return inner;
-  };
-  return inner;
-};
-get(2)(4)(7)(8)(9)(3)
-```
+
+## [Function chaining](https://github.com/phamha98/hi/blob/master/typescript.md?plain=1#L48-L60)
+
 ```js
 *.js
 get FlatList(): AnimatedFlatList {

@@ -32,42 +32,14 @@ xcrun simctl list
 ```
 ## [Debounce](https://github.com/phamha98/hi/blob/master/typescript.md?plain=1#L1-L46)
 
-### 🔴 Auto Reveal in Explorer View (Vscode)
-
-<img src="https://i.pinimg.com/474x/ca/7e/17/ca7e17a6e4bfcbad483aae32c538ef59.jpg" style="width: 150px; height: auto;">
  
+## [🔴 Auto Reveal in Explorer View (Vscode)](https://github.com/phamha98/hi/blob/master/vscode.md?plain=1#L82-L91)
 
-```json
-{
-"explorer.autoReveal": true,
-  "explorer.autoRevealExclude": {
-    "**/node_modules": false,
-    "**/bower_components": false
-  },
-}
-```
 https://github.com/microsoft/vscode/issues/168408#issuecomment-1342513210
 
 
 ## [Function chaining](https://github.com/phamha98/hi/blob/master/typescript.md?plain=1#L48-L60)
 
-```js
-*.js
-get FlatList(): AnimatedFlatList {
-    return require('./components/AnimatedFlatList').default;
-  },
-vscode setting =>"javascript.validate.enable": false, //validate ESLINT & Flow
-
-npm install -g javascript-obfuscator
-
-javascript-obfuscator src/ --output dist/
-
-{
-  "scripts": {
-    "obfuscate": "javascript-obfuscator src/ --output dist/"
-  }
-}
-```
 ## SHOTCUT
 ```sh
 open xcode  ...=> xed .

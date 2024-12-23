@@ -55,8 +55,8 @@
     // "window.inactiveBorder": "#33ff00",
   }
 }
-
 ```
+```json
 "editor.tokenColorCustomizations": {
         "comments": "#058b01"
     },
@@ -77,5 +77,15 @@ https://code.visualstudio.com/docs/getstarted/tips-and-tricks
     "terminalCursor.background": "#ffffff",
     "terminalCursor.foreground": "#ffffff"
   }
+}
+```
+### 🔴 Auto Reveal in Explorer View (Vscode)
+```json
+{
+"explorer.autoReveal": true,
+  "explorer.autoRevealExclude": {
+    "**/node_modules": false,
+    "**/bower_components": false
+  },
 }
 ```

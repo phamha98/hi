@@ -58,3 +58,18 @@ const get = (a = 1) => {
 };
 get(2)(4)(7)(8)(9)(3)
 ```
+*.js
+get FlatList(): AnimatedFlatList {
+    return require('./components/AnimatedFlatList').default;
+  },
+vscode setting =>"javascript.validate.enable": false, //validate ESLINT & Flow
+
+npm install -g javascript-obfuscator
+
+javascript-obfuscator src/ --output dist/
+
+{
+  "scripts": {
+    "obfuscate": "javascript-obfuscator src/ --output dist/"
+  }
+}

@@ -31,6 +31,9 @@ xcrun simctl erase all
 xcrun simctl list
 ```
 ## Debounce
+[Go to line 10](https://github.dev/phamha98/hi/typescript.md#L10)
+
+
 ```js
 const getData = useDebounce(async () => {
 		if (tmid) {

@@ -1,3 +1,4 @@
+## Debounce
 ```ts
 const getData = useDebounce(async () => {
     if (tmid) {

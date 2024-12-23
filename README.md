@@ -77,6 +77,7 @@ export function debounce(func: Function, wait?: number, immediate?: boolean) {
 ```
 
 ### 🔴 Auto Reveal in Explorer View (Vscode)
+
 <img src="https://i.pinimg.com/474x/ca/7e/17/ca7e17a6e4bfcbad483aae32c538ef59.jpg"style="width: 150px; height: auto;">
  
 

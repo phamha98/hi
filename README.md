@@ -61,35 +61,32 @@ sudo rm -rf ~/Library/Caches/org.swift.swiftpm
 env | grep ARCHS
 ```
 ### Nvm 
-```shell
+```sh
 nvm alias default 18
 nvm use 18
 ```
 <br>
 
 
-```shell
+```sh
 npx react-native start --port 8082
 ```
 
- 
-<br>
-
-```shell
+```sh
 npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle
 
 ```
-<br>
-
-```shell
+ 
+## Xcode 
+```sh
 sudo xcode-select --switch /Applications/Xcode.app
 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 
 xcode-select --install
 sudo xcodebuild -license
 ```
-<br>
 
+## STASH GIT 
 ```sh
 diff -u node_modules/module-name/example.js modified/example.js > my-patch.patch
 patch -p0 < my-patch.patch
@@ -205,7 +202,7 @@ curl -X POST  -H "content-type:application/json" \
 https://qqqq -d '{"message":{"_id":"sadsda","rid":"sadsadsad","msg":"Dssad","tshow":false}}' | jq
 done
 ```
-## API demo
+## API demo -jsonplaceholder
 ```sh
 ##*.http
 ### Get User Profile Request
@@ -216,14 +213,12 @@ Authorization:
 
 arch -x86_64 pod install
  
+<br><br>
 
- <br><br><br><br><br><br>
-
-### DOCS
-
-https://developer.apple.com/library/archive/navigation/
-https://developer.apple.com/contact/request/unlisted-app/
-https://developer.apple.com/library/archive/navigation/
+### Developer
+#### https://developer.apple.com/library/archive/navigation/
+####  https://developer.apple.com/contact/request/unlisted-app/
+####  https://developer.apple.com/library/archive/navigation/
 
 ## Guilde README.md write
 [line-number](https://stackoverflow.com/questions/23821235/how-to-link-to-a-specific-line-number-on-github)

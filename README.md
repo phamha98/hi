@@ -26,6 +26,9 @@ while (true) {
 ```sh
 xcrun simctl list devices
 xcrun xctrace list devices
+xcrun simctl erase  12F1624A-B635-438A-9F81-8B3A0DC81191
+xcrun simctl erase all
+xcrun simctl list
 ```
 ## Debounce
 ```js
@@ -92,7 +95,7 @@ export function debounce(func: Function, wait?: number, immediate?: boolean) {
 ```
 https://github.com/microsoft/vscode/issues/168408#issuecomment-1342513210
 
-### Function chaining
+## Function chaining
 ```js
 const get = (a = 1) => {
   let sum = a;
@@ -105,7 +108,7 @@ const get = (a = 1) => {
 };
 get(2)(4)(7)(8)(9)(3)
 ```
-```shell
+```js
 *.js
 get FlatList(): AnimatedFlatList {
     return require('./components/AnimatedFlatList').default;
@@ -121,6 +124,14 @@ javascript-obfuscator src/ --output dist/
     "obfuscate": "javascript-obfuscator src/ --output dist/"
   }
 }
+```
+## SHOTCUT
+```sh
+open xcode  ...=> xed .
+open vscode  ...=> code .
+??vscode->"Shell Command: Install 'code' command in PATH"
+
+
 
 open  terminal mac  from terminal vscode
 =>open -a Terminal .
@@ -128,9 +139,6 @@ open  terminal mac  from terminal vscode
 =>xcrun simctl list
 =>xcrun simctl boot <UDID>
 
-open xcode  ...=> xed .
-open vscode  ...=> code .
-??vscode->"Shell Command: Install 'code' command in PATH"
 
 
 sudo rm -rf ~/Library/Developer/Xcode/DerivedData/*
@@ -149,11 +157,7 @@ nvm use 18
 npx react-native start --port 8082
 ```
 
-```shell
-adb reverse tcp:8081 tcp:8081
-adb -s emulator-5554 reverse tcp:8081 tcp:8081
-adb -s emulator-5556 reverse tcp:8081 tcp:8081 
-```
+ 
 <br>
 
 ```shell
@@ -185,11 +189,9 @@ git stash show -p > my_stash.patch
 ```
 <br>
 
-
+## SQL VPS 
 ```shell
-xcrun simctl erase  12F1624A-B635-438A-9F81-8B3A0DC81191
-xcrun simctl erase all
-xcrun simctl list
+
 
 https://www.tensorflow.org/
 
@@ -216,17 +218,24 @@ firewall-cmd --zone=public --add-port=3306/tcp
 sudo firewall-cmd --list-ports
 
 ```
-
+## ADB 
 ```shell
+adb reverse tcp:8081 tcp:8081
+adb -s emulator-5554 reverse tcp:8081 tcp:8081
+adb -s emulator-5556 reverse tcp:8081 tcp:8081 
 
 adb -s emulator-5554 install myapp.apk
-adb reverse tcp:8081 tcp:8081
+
+
 adb devices
+#reactotron
 adb -s emulator-5554 reverse tcp:9090 tcp:9090
+
 adb shell input keyevent 82
-#code=82
+#code=82 open keyboard
 adb -s emulator-5554 shell input keyevent 82
-adb devices
+
+
 adb kill-server
 adb start-server
 
@@ -239,9 +248,7 @@ chmod -R 0777 /tmp
 
 ```
 
-<br>
-<br>
-<br>
+ ## PM2 nodejs
 
 ```shell
 pm2 list
@@ -261,7 +268,7 @@ pm2 update
 
 
 ```
-
+## Gradle note
 ```gradle
 subprojects { subproject ->
     if(project['name'] == 'react-native-reanimated'){
@@ -269,7 +276,7 @@ subprojects { subproject ->
     }
 }
 ```
-
+## API Shell
 ```sh
 
 curl -X POST  -H "content-type:application/json" -H "user-agent:RC Mobile; ios 17.2; v1.1.50 (2023080386)" https://abv -d '{ }' |    jq
@@ -283,7 +290,7 @@ curl -X POST  -H "content-type:application/json" \
 https://qqqq -d '{"message":{"_id":"sadsda","rid":"sadsadsad","msg":"Dssad","tshow":false}}' | jq
 done
 ```
-
+## API demo
 ```sh
 ##*.http
 ### Get User Profile Request

@@ -30,7 +30,7 @@ xcrun simctl erase  12F1624A-B635-438A-9F81-8B3A0DC81191
 xcrun simctl erase all
 xcrun simctl list
 ```
-## [Debounce](https://github.com/phamha98/hi/blob/master/typescript.md?plain=1#L1)
+## [Debounce](https://github.com/phamha98/hi/blob/master/typescript.md?plain=1#L1-L46)
 
 ### 🔴 Auto Reveal in Explorer View (Vscode)
 

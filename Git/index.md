@@ -1,10 +1,3 @@
-crack smart-git
-```sh
-cd ~/Library/Preferences/SmartGit/
-sed -i '' '/listx/d' ./*/preferences.yml
-rm */license
-```
-
 
 ```bash
 git config --global user.name <username>

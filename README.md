@@ -219,3 +219,6 @@ Object.defineProperty(obj, 'key', {
 });
 ```
  
+## [Smart git](https://github.com/phamha98/hi/blob/master/git.md?plain=1#L1-L5)
+## [Git docs](https://github.com/phamha98/hi/blob/master/git.md?plain=1#L1)
+ 

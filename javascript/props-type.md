@@ -46,11 +46,15 @@ function checkIfUpdateNeeded(
 
 
 ```
- 
- ```ts
- type AuthProviderMockProps = {
-  [K in keyof CreateAuthProviderMockProps]-?: NonNullable<
-    CreateAuthProviderMockProps[K]
-  >;
-};
- ```
+```ts
+export default app => {}
+import users from './users.routes'
+users(app)
+```
+```ts
+module.exports = app => {
+require("./tutorial.routes")(app);
+```
+
+
+[javadoc-tool](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#styleguide)

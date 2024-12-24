@@ -91,3 +91,9 @@ while (true) {
 }
 
 ```
+## K in keyof
+```ts
+ type AuthProviderMockProps = {
+  [K in keyof CreateAuthProviderMockProps]-?: NonNullable<CreateAuthProviderMockProps[K]>
+};
+ ```

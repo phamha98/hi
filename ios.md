@@ -1,33 +1,34 @@
+## New Certificate
 FIREBASE #IOS FIREBASEIOS  #Certificate #P12
 
-1. Create file *.certSigningRequest
--Open Keychain Access
--Tabbar 
--Certificate Assistant
--Request a Cerificate From a Cerificate Authority
+### 1. Create file *.certSigningRequest
+- Open Keychain Access
+- Tabbar 
+- Certificate Assistant
+- Request a Cerificate From a Cerificate Authority
     -User Email Address
     -Saved to disk
 
 
-2. Create *.cer
--https://developer.apple.com/account/resources/certificates/list
+### 2. Create *.cer
+- [go developer apple ](https://developer.apple.com/account/resources/certificates/list)
+ 
+- Certificates +
 
--Certificates +
-
--Apple Push Notification service SSL (Sandbox & Production)
+- Apple Push Notification service SSL (Sandbox & Production)
 Establish connectivity between your notification server, the Apple Push Notification service sandbox, and production environments to deliver remote notifications to your app. When utilizing HTTP/2, the same certificate can be used to deliver app notifications, update ClockKit complication data, and alert background VoIP apps of incoming activity. A separate certificate is required for each app you distribute.
 
--App ID: 
+- App ID: 
 Select... com.app
 
--Choose File
+- Choose File
 CertificateSigningRequest***.certSigningRequest
 
 Download
 
 aps*.cer
 
-3. Create *.p12
+### 3. Create *.p12
 
 open file aps*.cer by Keychain Access
 
@@ -44,7 +45,7 @@ open file aps*.cer by Keychain Access
 
 
 
-4. update APNs Certificates
+### 4. update APNs Certificates
 -https://console.firebase.google.com/project/**com.appname
 -Clound Messaging
 -Apple app configuration

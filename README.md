@@ -242,8 +242,8 @@ cat company.pub | pbcopy
 ## [Git admend ](https://github.com/phamha98/hi/blob/master/git.md?plain=1#L56)
 
 ## [JS props-type](https://github.com/phamha98/hi/blob/master/javascript.md?plain=1#L168-228)
-## [Ubuntu ](https://github.com/phamha98/hi/blob/master/Ubuntu/Setting.md?plain=1#L1)
-
+## [Ubuntu setting](https://github.com/phamha98/hi/blob/master/ubuntu.md?plain=1#L1)
+## [Ubuntu setting swap](https://github.com/phamha98/hi/blob/master/ubuntu.md?plain=1#L411-L453)
 ## [Codepush ](https://github.com/phamha98/hi/blob/master/reactnative.md?plain=1#L30-L154)
 ## [Animated](https://github.com/phamha98/hi/blob/master/reactnative.md?plain=1#L156-L228)
 ```ts
@@ -269,4 +269,4 @@ module.exports = {
 ## [Npm ](https://github.com/phamha98/hi/blob/master/npm.md?plain=1#L1)
 ## [Formik ](https://github.com/phamha98/hi/blob/master/root.md?plain=1#L1-L199)
 ## [Resize APK ](https://github.com/phamha98/hi/blob/master/root.md?plain=1#L200-L272)
-## [Resize APK ](https://github.com/phamha98/hi/blob/master/root.md?plain=1#Resize APK)
+## [New certificate ](https://github.com/phamha98/hi/blob/master/ios.md?plain=1#L1-L61)

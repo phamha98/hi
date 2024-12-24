@@ -221,6 +221,10 @@ Object.defineProperty(obj, 'key', {
  
 ## [Smart git](https://github.com/phamha98/hi/blob/master/git.md?plain=1#L1-L5)
 ## [Git docs](https://github.com/phamha98/hi/blob/master/git.md?plain=1#L1)
+```sh
+git branch -m new-name #Current 
+git branch -m old-name new-name
+```
 ## [SSH git](https://github.com/phamha98/hi/blob/master/git.md?plain=1#L43)
 ```sh
 cd ~/.ssh && ssh-keygen

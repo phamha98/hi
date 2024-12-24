@@ -235,3 +235,4 @@ cat company.pub | pbcopy
 ## [Git admend ](https://github.com/phamha98/hi/blob/master/git.md?plain=1#L56)
 
 ## [JS props-type](https://github.com/phamha98/hi/blob/master/javascript.md?plain=1#L168-228)
+## [Ubuntu ](https://github.com/phamha98/hi/blob/master/Ubuntu/Setting.md?plain=1#L1)

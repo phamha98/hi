@@ -243,9 +243,19 @@ cat company.pub | pbcopy
 
 ## [JS props-type](https://github.com/phamha98/hi/blob/master/javascript.md?plain=1#L168-228)
 ## [Ubuntu ](https://github.com/phamha98/hi/blob/master/Ubuntu/Setting.md?plain=1#L1)
-## [Fonts ](https://github.com/phamha98/hi/blob/master/reactnative.md?plain=1#L1-L29)
+
 ## [Codepush ](https://github.com/phamha98/hi/blob/master/reactnative.md?plain=1#L30-L154)
 ## [Animated](https://github.com/phamha98/hi/blob/master/reactnative.md?plain=1#L156-L228)
+```ts
+const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
+interface WalletCardProps {
+    y: Animated.Value;
+    index: number;
+    type: Cards;
+  }
+  
+```
+## [Fonts ](https://github.com/phamha98/hi/blob/master/reactnative.md?plain=1#L1-L29)
 ```js
 module.exports = {
     project: {

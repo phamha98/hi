@@ -252,6 +252,6 @@ module.exports = {
 };
 ```
 ## [Thanh điều hướng ](https://github.com/thebylito/react-native-navigation-bar-color)
-<div style="justify-content: end;height: 80px;  overflow: hidden;position: relative;">
+<div style="justify-content: end;height: 80px;width:400px;  overflow: hidden;position: relative;">
   <img src="https://raw.githubusercontent.com/thebylito/react-native-navigation-bar-color/master/screenshots/screenShot3.jpg"style=" height: 80px;object-fit: cover; position: absolute;bottom: 0px;">
 </div>

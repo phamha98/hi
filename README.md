@@ -206,10 +206,12 @@ arch -x86_64 pod install
 ####  https://developer.apple.com/contact/request/unlisted-app/
 ####  https://developer.apple.com/library/archive/navigation/
 
-## Guilde README.md write
+# Guilde README.md write
 [line-number](https://stackoverflow.com/questions/23821235/how-to-link-to-a-specific-line-number-on-github)
 
 [basic-syntax](https://www.markdownguide.org/basic-syntax/)
+
+- https://github.com/fefong/markdown_readme
 
 ## [JS defineProperty](https://github.com/phamha98/hi/blob/master/javascript.md?plain=1#L10)
 ```js
@@ -256,4 +258,4 @@ module.exports = {
 ## [Npm ](https://github.com/phamha98/hi/blob/master/npm.md?plain=1#L1)
 ## [Formik ](https://github.com/phamha98/hi/blob/master/root.md?plain=1#L1-L199)
 ## [Resize APK ](https://github.com/phamha98/hi/blob/master/root.md?plain=1#L200-L272)
-## [Resize APK ](https://github.com/phamha98/hi/blob/master/root.md?plain=1## Resize APK)
+## [Resize APK ](https://github.com/phamha98/hi/blob/master/root.md?plain=1#Resize APK)

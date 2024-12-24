@@ -242,7 +242,7 @@ cat company.pub | pbcopy
 ## [Git admend ](https://github.com/phamha98/hi/blob/master/git.md?plain=1#L56)
 
 ## [JS props-type](https://github.com/phamha98/hi/blob/master/javascript.md?plain=1#L168-228)
-## [Ubuntu setting](https://github.com/phamha98/hi/blob/master/ubuntu.md?plain=1#L1)
+## [Ubuntu setting](https://github.com/phamha98/hi/blob/master/ubuntu.md)
 ## [Ubuntu setting swap](https://github.com/phamha98/hi/blob/master/ubuntu.md?plain=1#L411-L453)
 ## [Codepush ](https://github.com/phamha98/hi/blob/master/reactnative.md?plain=1#L30-L154)
 ## [Animated](https://github.com/phamha98/hi/blob/master/reactnative.md?plain=1#L156-L228)

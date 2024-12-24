@@ -84,7 +84,7 @@ import com.facebook.react.bridge.JSIModulePackage; // <- add
 
 # 4 install \*.gif (image)
 
-```gradle
+```gradlew
 implementation 'com.facebook.fresco:fresco:2.0.0'
 implementation 'com.facebook.fresco:animated-gif:2.0.0'
 ```

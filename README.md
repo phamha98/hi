@@ -242,3 +242,15 @@ cat company.pub | pbcopy
 ## [JS props-type](https://github.com/phamha98/hi/blob/master/javascript.md?plain=1#L168-228)
 ## [Ubuntu ](https://github.com/phamha98/hi/blob/master/Ubuntu/Setting.md?plain=1#L1)
 ## [Fonts ](https://github.com/phamha98/hi/blob/master/reactnative.md?plain=1#L1-L29)
+```js
+module.exports = {
+    project: {
+        ios: {},
+        android: {},
+    },
+    assets: ['./assets/fonts'],
+};
+```
+## [Thanh điều hướng ](https://github.com/thebylito/react-native-navigation-bar-color)
+[react-native-navigation-bar-color][https://github.com/thebylito/react-native-navigation-bar-color]
+<img src="https://raw.githubusercontent.com/thebylito/react-native-navigation-bar-color/master/screenshots/screenShot3.jpg" height="500">

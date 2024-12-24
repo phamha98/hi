@@ -245,6 +245,7 @@ cat company.pub | pbcopy
 ## [Ubuntu ](https://github.com/phamha98/hi/blob/master/Ubuntu/Setting.md?plain=1#L1)
 ## [Fonts ](https://github.com/phamha98/hi/blob/master/reactnative.md?plain=1#L1-L29)
 ## [Codepush ](https://github.com/phamha98/hi/blob/master/reactnative.md?plain=1#L30-L154)
+## [Animated](https://github.com/phamha98/hi/blob/master/reactnative.md?plain=1#L156-L228)
 ```js
 module.exports = {
     project: {

@@ -195,7 +195,6 @@ done
 ### Get User Profile Request
 GET https://jsonplaceholder.typicode.com/todos 
 Authorization: 
-
 ```
 
 arch -x86_64 pod install
@@ -212,3 +211,11 @@ arch -x86_64 pod install
 
 [basic-syntax](https://www.markdownguide.org/basic-syntax/)
 
+## [JS defineProperty](https://github.com/phamha98/hi/blob/master/javascript.md?plain=1#L10)
+```js
+Object.defineProperty(obj, 'key', {
+  value: 'value',
+  writable: false
+});
+```
+ 

@@ -1,3 +1,4 @@
+```js
 const obj = Object.freeze({ key: 'value' });
 obj.newKey = 'sad'; // Thêm một thuộc tính mới vào đối tượng
 console.log('obj', obj); // Output: { key: 'value' }

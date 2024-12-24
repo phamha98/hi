@@ -1,3 +1,5 @@
+## Formik
+```ts
 /(84|0[3|5|7|8|9])+([0-9]{8})\b/g
 
 
@@ -193,3 +195,78 @@ const SignupSchema = yup.object().shape({
     .min(8, 'Minimun length of 8')
     .required('Required'),
 })
+
+```
+## Resize APK
+ 
+ ```java
+ org.gradle.jvmargs=-Xmx4608m
+ ```
+ 
+ ```java
+ applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def formattedDate = new Date().format('HHmmss_DDMMYY')
+            outputFileName = "ApplicationName-${variant.name}-v${variant.versionName}-v${defaultConfig.versionCode}-time_${formattedDate}.apk"
+        }
+    }
+ ```
+ 
+ 
+ 1, giam size  file apk
+
+### Build nặng do:
+- 1 tổng số mã Js được nhập vào ứng dụng của bạn (bao gồm trong node_modules)
+- 2 tổng mức sử dụng mã gốc trong ứng dụng của bạn.
+- 3 Tổng nội dung (hình ảnh / video / phương tiện ...)
+ biến thể của thiết bị mà ứng dụng của bạn hỗ trợ
+
+
+```java
+* android/app/build.gradle
+buildTypes {
+       
+}
+    //add this : giam dung luong apk
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "12g"
+    }
+
+
+def enableSeparateBuildPerCPUArchitecture = true//old false
+def enableProguardInReleaseBuilds = true//old false
+
+
+ * android/gradle.properties
+    org.gradle.jvmargs=-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8
+    org.gradle.daemon=true
+```
+### doi ten mac dinh
+```java
+android {
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def formattedDate = new Date().format('HHmmss_DDMMYY')
+            outputFileName = "ApplicationName-${variant.name}-v${variant.versionName}-v${defaultConfig.versionCode}-time_${formattedDate}.apk"
+        }
+    }
+```
+ 
+```java
+android {
+    ndkVersion rootProject.ext.ndkVersion
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.test123"
+```
+### open hoac giai nen appl ra xem cac folder nao năng
+android/build.gradle
+```
+release {
+    shrinkResources true
+    minifyEnabled true
+}
+```

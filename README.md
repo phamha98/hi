@@ -253,3 +253,6 @@ module.exports = {
 };
 ```
 ## [Thanh điều hướng ](https://github.com/thebylito/react-native-navigation-bar-color)
+## [Npm ](https://github.com/phamha98/hi/blob/master/npm.md?plain=1#L1)
+## [Formik ](https://github.com/phamha98/hi/blob/master/root.md?plain=1#L1-L199)
+## [Resize APK ](https://github.com/phamha98/hi/blob/master/root.md?plain=1#L200-L272)

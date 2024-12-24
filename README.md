@@ -221,4 +221,15 @@ Object.defineProperty(obj, 'key', {
  
 ## [Smart git](https://github.com/phamha98/hi/blob/master/git.md?plain=1#L1-L5)
 ## [Git docs](https://github.com/phamha98/hi/blob/master/git.md?plain=1#L1)
- 
+## [SSH git](https://github.com/phamha98/hi/blob/master/git.md?plain=1#L43)
+```sh
+cd ~/.ssh && ssh-keygen
+
+#Generating public/private rsa key pair.
+#Enter file in which to save the key (/Users/phamha/.ssh/id_rsa):company
+
+ssh-add ~/.ssh/company
+cat company.pub | pbcopy
+
+```
+## [Git admend ](https://github.com/phamha98/hi/blob/master/git.md?plain=1#L56)

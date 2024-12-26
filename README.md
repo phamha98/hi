@@ -9,13 +9,17 @@ console.debug(new URLSearchParams(params).toString())
 ## [Appium](https://github.com/phamha98/hi/blob/master/typescript.md?plain=1#L79-L93)
 
 
-## xcrun
+## XCRUN
 ```sh
 xcrun simctl list devices
 xcrun xctrace list devices
 xcrun simctl erase  12F1624A-B635-438A-9F81-8B3A0DC81191
 xcrun simctl erase all
 xcrun simctl list
+
+xcrun simctl install B7AF4418-507F-4DBF-9810-6E598D161649  
+
+
 ```
 ## [Debounce](https://github.com/phamha98/hi/blob/master/typescript.md?plain=1#L1-L46)
 

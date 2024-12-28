@@ -226,3 +226,26 @@ require("./tutorial.routes")(app);
 
 
 [javadoc-tool](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#styleguide)
+## Function this
+```js
+function Circle(radius) {
+    // Gán thuộc tính cho đối tượng thông qua this
+    this.radius = radius;
+
+    // Định nghĩa phương thức
+    this.diameter = function () {
+        return this.radius * 2;
+    };
+
+    this.circumference = function () {
+        return 2 * Math.PI * this.radius;
+    };
+}
+
+// Tạo đối tượng mới từ function
+const myCircle = new Circle(5);
+
+console.log(myCircle.diameter()); // Output: 10
+console.log(myCircle.circumference()); // Output: 31.41592653589793
+
+```

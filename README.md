@@ -21,6 +21,18 @@ xcrun simctl install B7AF4418-507F-4DBF-9810-6E598D161649
 
 
 ```
+### Install IPA to device
+```sh
+npm install -g ios-deploy
+
+xcrun xctrace list devices
+ios-deploy --justlaunch --id <device-udid> --bundle /path/to/YourApp.ipa
+
+ios-deploy --debug --id <device-udid> --bundle /path/to/YourApp.ipa
+
+
+```
+
 ## [Debounce](https://github.com/phamha98/hi/blob/master/typescript.md?plain=1#L1-L46)
 
  

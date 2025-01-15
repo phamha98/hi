@@ -97,3 +97,27 @@ while (true) {
   [K in keyof CreateAuthProviderMockProps]-?: NonNullable<CreateAuthProviderMockProps[K]>
 };
  ```
+
+#  Record<StyleKeys, any>
+```ts
+import { Image, StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+export default function App() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Test mar-1 pad-1 border-1 />
+    </View>
+  )
+}
+
+type StyleKeys =
+  | `mar-${1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10}`
+  | `pad-${1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10}`
+  | `border-${1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10}`;
+type ChillProps = Record<StyleKeys, any>;
+
+const Test = (props: ChillProps) => {
+  return null
+}
+```

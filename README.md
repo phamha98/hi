@@ -288,3 +288,5 @@ module.exports = {
 ## [Formik ](https://github.com/phamha98/hi/blob/master/root.md?plain=1#L1-L199)
 ## [Resize APK ](https://github.com/phamha98/hi/blob/master/root.md?plain=1#L200-L272)
 ## [New certificate ](https://github.com/phamha98/hi/blob/master/ios.md?plain=1#L1-L61)
+## [Search1 ](https://phamha98.github.io/open/)
+## [Search2 ](https://phamha98.github.io/page/)

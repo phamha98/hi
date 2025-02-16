@@ -290,3 +290,20 @@ module.exports = {
 ## [New certificate ](https://github.com/phamha98/hi/blob/master/ios.md?plain=1#L1-L61)
 ## [Search1 ](https://phamha98.github.io/open/)
 ## [Search2 ](https://phamha98.github.io/page/)
+
+
+I18n.matchedSystemLang = (locales) => {
+    for (const locale of locales) {
+        const systemLang = parseSystemLang(locale.languageTag.toLowerCase());
+        if (systemLang.match(/en|zh-hant|zh-hans/)) {
+            return systemLang;
+        }
+    }
+    return 'en';
+};
+
+
+
+
+
+

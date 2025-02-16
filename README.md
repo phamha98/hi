@@ -301,6 +301,11 @@ I18n.matchedSystemLang = (locales) => {
     }
     return 'en';
 };
+  private onPressTriggerIOS() {
+        if (React.Children.count(this.props.children)) {
+            this.setState({ isShowing: true });
+        }
+    }
 
 
 

@@ -291,7 +291,7 @@ module.exports = {
 ## [Search1 ](https://phamha98.github.io/open/)
 ## [Search2 ](https://phamha98.github.io/page/)
 
-
+```js
 I18n.matchedSystemLang = (locales) => {
     for (const locale of locales) {
         const systemLang = parseSystemLang(locale.languageTag.toLowerCase());
@@ -307,7 +307,7 @@ I18n.matchedSystemLang = (locales) => {
         }
     }
 
-
+```js
 
 
 

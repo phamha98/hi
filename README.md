@@ -291,23 +291,7 @@ module.exports = {
 ## [Search1 ](https://phamha98.github.io/open/)
 ## [Search2 ](https://phamha98.github.io/page/)
 
-```js
-I18n.matchedSystemLang = (locales) => {
-    for (const locale of locales) {
-        const systemLang = parseSystemLang(locale.languageTag.toLowerCase());
-        if (systemLang.match(/en|zh-hant|zh-hans/)) {
-            return systemLang;
-        }
-    }
-    return 'en';
-};
-  private onPressTriggerIOS() {
-        if (React.Children.count(this.props.children)) {
-            this.setState({ isShowing: true });
-        }
-    }
 
-```js
 
 
 

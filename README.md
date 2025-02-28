@@ -1,7 +1,9 @@
 #
+
 ```sh
 npx react-native start --port 8082
 ```
+
 ### index.android.bundle
 
 ```sh
@@ -67,8 +69,6 @@ sudo rm -rf ~/Library/Caches/org.swift.swiftpm
 env | grep ARCHS
 ```
 
-
-
 ## Xcode
 
 ```sh
@@ -92,6 +92,78 @@ git apply my_stash.patch
 git stash apply
 git stash show -p > my_stash.patch
 
+```
+
+## Licences smart-git
+
+```sh
+cd ~/Library/Preferences/SmartGit/
+sed -i '' '/listx/d' ./*/preferences.yml
+rm */license
+```
+
+## Config
+
+```bash
+git config --global user.name <username>
+git config --global user.email <mailaddress>
+```
+
+## clone folder
+
+```sh
+git clone https://github.com/phamha98/hi.git/ ./image
+https://docs.gitlab.com/ee/ssh/
+ssh -T git@gitlab.com
+```
+
+## rename branch
+
+```sh
+git branch -m new-name #Current
+git branch -m old-name new-name
+```
+
+## Xóa branch old-name trên remote và push new-name từ local lên remote:
+
+```sh
+git push origin :old-name new-name
+```
+
+## Sửa lại upstream cho new-name trên local để sau này nó push lên new-name trên remote
+
+```sh
+git push origin -u new-name
+```
+
+## ssh
+
+```sh
+https://docs.gitlab.com/ee/ssh/
+ssh -T git@gitlab.com
+```
+
+## SSH git
+
+```sh
+cd ~/.ssh && ssh-keygen
+
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/phamha/.ssh/id_rsa):company
+
+
+ssh-add ~/.ssh/company
+cat company.pub | pbcopy
+
+```
+
+## Git admend
+
+```sh
+git log --oneline
+git commit --amend -m "Added lines to README.md"
+
+git push -f #push force
 ```
 
 <br>
@@ -968,22 +1040,22 @@ const checkValidate = yup.object({
     .min(10, "Tối thiểu 10 chữ số")
     .required(),
 });
-export default function screen_transport () {
-  console.log('screen_transport')
+export default function screen_transport() {
+  console.log("screen_transport");
   return (
-    <LayoutC title='Đang vận chuyển' left={false}>
+    <LayoutC title="Đang vận chuyển" left={false}>
       <Formik
         validationSchema={checkValidate}
         // validate={validate}
         initialValues={{
-          email: '',
-          password: '',
-          confirm_password: '',
-          phone: '',
+          email: "",
+          password: "",
+          confirm_password: "",
+          phone: "",
         }}
-        onSubmit={(values, {resetForm}) => {
-          resetForm()
-          console.log(values)
+        onSubmit={(values, { resetForm }) => {
+          resetForm();
+          console.log(values);
         }}
         // handleChange={e => console.log(e)}
       >
@@ -997,91 +1069,97 @@ export default function screen_transport () {
         }) => (
           <View>
             <TextInput
-              onChangeText={handleChange('email')}
-              onBlur={handleBlur('email')}
+              onChangeText={handleChange("email")}
+              onBlur={handleBlur("email")}
               value={values.email}
               style={[
                 styles.input,
-                {borderWidth: errors.email ? 2 : 0, borderColor: 'red'},
+                { borderWidth: errors.email ? 2 : 0, borderColor: "red" },
               ]}
-              placeholder='Nhập email'
+              placeholder="Nhập email"
             />
             {errors.email && (
-              <Text style={{color: 'red'}}>
-                {'  '}
+              <Text style={{ color: "red" }}>
+                {"  "}
                 {errors.email}
               </Text>
             )}
             <TextInput
-              onChangeText={handleChange('password')}
-              onBlur={handleBlur('password')}
+              onChangeText={handleChange("password")}
+              onBlur={handleBlur("password")}
               value={values.password}
               style={[
                 styles.input,
-                {borderWidth: errors.password ? 2 : 0, borderColor: 'red'},
+                { borderWidth: errors.password ? 2 : 0, borderColor: "red" },
               ]}
-              placeholder='Nhập password'
+              placeholder="Nhập password"
             />
 
             <TextInput
-              onChangeText={handleChange('confirm_password')}
-              onBlur={handleBlur('confirm_password')}
+              onChangeText={handleChange("confirm_password")}
+              onBlur={handleBlur("confirm_password")}
               value={values.confirm_password}
               style={[
                 styles.input,
                 {
                   borderWidth: errors.confirm_password ? 2 : 0,
-                  borderColor: 'red',
+                  borderColor: "red",
                 },
               ]}
-              placeholder='Nhập lai password'
+              placeholder="Nhập lai password"
             />
             <TextInput
-              onChangeText={handleChange('phone')}
-              onBlur={handleBlur('phone')}
+              onChangeText={handleChange("phone")}
+              onBlur={handleBlur("phone")}
               value={values.phone}
               style={[
                 styles.input,
-                {borderWidth: errors.phone ? 2 : 0, borderColor: 'red'},
+                { borderWidth: errors.phone ? 2 : 0, borderColor: "red" },
               ]}
-              placeholder='Nhập sdt'
+              placeholder="Nhập sdt"
             />
             {errors.phone && (
-              <Text style={{color: 'red'}}>
-                {'  '}
+              <Text style={{ color: "red" }}>
+                {"  "}
                 {errors.phone}
               </Text>
             )}
             <Text>test</Text>
-            <Button onPress={handleSubmit} title='Submit' />
+            <Button onPress={handleSubmit} title="Submit" />
             <Text />
-            <Button onPress={() => handleReset('email')} title='clear email' />
+            <Button onPress={() => handleReset("email")} title="clear email" />
           </View>
         )}
       </Formik>
     </LayoutC>
-  )
+  );
 }
 ```
-## Typescript
-## K in keyof
-```ts
- type AuthProviderMockProps = {
-  [K in keyof CreateAuthProviderMockProps]-?: NonNullable<CreateAuthProviderMockProps[K]>
-};
- ```
 
-#  Record<StyleKeys, any>
+## Typescript
+
+## K in keyof
+
 ```ts
-import { Image, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+type AuthProviderMockProps = {
+  [K in keyof CreateAuthProviderMockProps]-?: NonNullable<
+    CreateAuthProviderMockProps[K]
+  >;
+};
+```
+
+# Record<StyleKeys, any>
+
+```ts
+import { Image, StyleSheet, Text, View } from "react-native";
+import React from "react";
 
 export default function App() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Test mar-1 pad-1 border-1 />
     </View>
-  )
+  );
 }
 
 type StyleKeys =
@@ -1091,38 +1169,38 @@ type StyleKeys =
 type ChillProps = Record<StyleKeys, any>;
 
 const Test = (props: ChillProps) => {
-  return null
-}
+  return null;
+};
 ```
+
 ## Resize APK
- 
- ```java
- org.gradle.jvmargs=-Xmx4608m
- ```
- 
- ```java
- applicationVariants.all { variant ->
-        variant.outputs.all { output ->
-            def formattedDate = new Date().format('HHmmss_DDMMYY')
-            outputFileName = "ApplicationName-${variant.name}-v${variant.versionName}-v${defaultConfig.versionCode}-time_${formattedDate}.apk"
-        }
-    }
- ```
- 
- 
- 1, giam size  file apk
+
+```java
+org.gradle.jvmargs=-Xmx4608m
+```
+
+```java
+applicationVariants.all { variant ->
+       variant.outputs.all { output ->
+           def formattedDate = new Date().format('HHmmss_DDMMYY')
+           outputFileName = "ApplicationName-${variant.name}-v${variant.versionName}-v${defaultConfig.versionCode}-time_${formattedDate}.apk"
+       }
+   }
+```
+
+1, giam size file apk
 
 ### Build nặng do:
+
 - 1 tổng số mã Js được nhập vào ứng dụng của bạn (bao gồm trong node_modules)
 - 2 tổng mức sử dụng mã gốc trong ứng dụng của bạn.
 - 3 Tổng nội dung (hình ảnh / video / phương tiện ...)
- biến thể của thiết bị mà ứng dụng của bạn hỗ trợ
-
+  biến thể của thiết bị mà ứng dụng của bạn hỗ trợ
 
 ```java
 * android/app/build.gradle
 buildTypes {
-       
+
 }
     //add this : giam dung luong apk
     dexOptions {
@@ -1139,7 +1217,9 @@ def enableProguardInReleaseBuilds = true//old false
     org.gradle.jvmargs=-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8
     org.gradle.daemon=true
 ```
+
 ### doi ten mac dinh
+
 ```java
 android {
     applicationVariants.all { variant ->
@@ -1149,7 +1229,7 @@ android {
         }
     }
 ```
- 
+
 ```java
 android {
     ndkVersion rootProject.ext.ndkVersion
@@ -1159,8 +1239,11 @@ android {
     defaultConfig {
         applicationId "com.test123"
 ```
+
 ### open hoac giai nen appl ra xem cac folder nao năng
+
 android/build.gradle
+
 ```
 release {
     shrinkResources true

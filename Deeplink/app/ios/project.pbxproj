@@ -1,0 +1,4 @@
+buildSettings = {
+    CODE_SIGN_ENTITLEMENTS = RCTModule/RCTModule.entitlements;
+    DEVELOPMENT_TEAM = B5BWM9VDRS;
+    PRODUCT_BUNDLE_IDENTIFIER = com.stech.qslandapp;

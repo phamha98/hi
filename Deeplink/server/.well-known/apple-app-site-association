@@ -1,0 +1,13 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "B5BWM9VDRS.com.stech.qslandapp",
+                "paths": [
+                    "/app/site/*"
+                ]
+            }
+        ]
+    }
+}

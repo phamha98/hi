@@ -1,0 +1,13 @@
+https://yourdomain.com/.well-known/assetlinks.json
+https://29b0-1-52-78-47.ngrok-free.app/.well-known/assetlinks.json
+
+adb shell am start -a android.intent.action.VIEW -d "https://29b0-1-52-78-47.ngrok-free.app"
+
+applinks:random-name.ngrok.io
+
+curl -i https://29b0-1-52-78-47.ngrok-free.app/.well-known/assetlinks.json
+curl -X GET "https://digitalassetlinks.googleapis.com/v1/statements:list?source.web.site=https://29b0-1-52-78-47.ngrok-free.app&relation=delegate_permission/common.handle_all_urls"
+adb shell am start -a android.intent.action.VIEW -d "https://29b0-1-52-78-47.ngrok-free.app/invite"
+adb logcat -s ActivityTaskManager IntentResolver
+curl -i https://go.rocket.chat
+adb shell am start -a android.intent.action.VIEW -d "https://29b0-1-52-78-47.ngrok-free.app/invite"\n

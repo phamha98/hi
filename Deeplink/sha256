@@ -1,0 +1,1 @@
+keytool -list -v -keystore my-release.jks -alias my-release -storepass my-release | grep SHA256

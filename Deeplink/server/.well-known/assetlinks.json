@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.stech.qslandapp",
+            "sha256_cert_fingerprints": [
+                "D8:15:70:8D:24:71:32:B1:C4:B6:3C:FF:87:26:BC:4F:34:25:E7:FE:50:CB:3F:24:83:B4:CC:20:4D:43:CD:BC"
+            ]
+        }
+    }
+]

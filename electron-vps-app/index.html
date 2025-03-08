@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electron VPS Connect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px 0;
+            width: 100%;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Electron VPS Connection</h1> -->
+    <input type="text" id="vps-url" placeholder="URL" value="176.32.66.38" />
+    <button id="fetch-data">Connect</button>
+    <button id="import-pem">file</button>
+    <pre id="response">----</pre>
+    <button id="back-button">back-button</button>
+    <button id="pwd">-</button>
+    <div id="file-list">
+    </div>
+    <script>
+        const fetchButton = document.getElementById('fetch-data');
+        const importPemButton = document.getElementById('import-pem');
+        const vpsUrlInput = document.getElementById('vps-url');
+        const responseDisplay = document.getElementById('response');
+        const pwd = document.getElementById('pwd');
+
+        let pemFilePath = null;  // Biến lưu đường dẫn file PEM
+
+        // Lắng nghe sự kiện nhấn nút "Import PEM File"
+        importPemButton.addEventListener('click', async () => {
+            pemFilePath = await window.electronAPI.selectPemFile();  // Mở hộp thoại chọn file PEM
+            if (pemFilePath) {
+                importPemButton.textContent = 'PEM file selected: ' + pemFilePath.split('/').pop()
+                importPemButton.style.color = "blue"
+                // alert('PEM file selected: ' + pemFilePath);
+            } else {
+                importPemButton.textContent = 'No PEM file selected'
+                importPemButton.style.color = "gray"
+                // alert('No PEM file selected');
+            }
+        });
+
+        // Lắng nghe sự kiện nhấn nút "Fetch Data"
+        fetchButton.addEventListener('click', async () => {
+            console.log('click')
+            responseDisplay.textContent = 'click'
+            // const url = vpsUrlInput.value;
+            // if (!url) {
+            //     alert('Please enter a valid URL!');
+            //     return;
+            // }
+            // if (!pemFilePath) {
+            //     // alert('Please select a PEM file!');
+            //     // return;
+            // }
+
+            window.electronAPI.send('start-ssh-stream', {
+                host: '176.32.66.38',
+                pem: 'stalk-key-ED25519.pem',
+                port: 22,
+                pemFilePath: pemFilePath,
+                username: 'ubuntu'
+            });
+
+
+        });
+        window.electronAPI.receive('ssh-state', ({ data }) => { responseDisplay.textContent = data })
+        // Nhận dữ liệu từ Electron API
+        // Lưu trữ trạng thái các thư mục đã duyệt và dữ liệu tải về
+        let folders = [];
+        let currentFolderPath = '/'; // Bắt đầu ở thư mục gốc
+        window.electronAPI.receive('ssh-pwd', ({ data }) => {
+            console.log('receive ssh-pwd', data)
+            folders = data.split('/').filter(i => i != '')
+            console.log('receive folders', folders)
+            pwd.textContent = folders.join('/')
+        })
+        window.electronAPI.receive('ssh-data', ({ data }) => {
+            console.log('onResponse ssh-data', data);
+
+            // Lấy phần tử ul nơi bạn muốn hiển thị dữ liệu
+            const fileListContainer = document.getElementById('file-list');
+            fileListContainer.innerHTML = ''; // Clear any previous content
+
+            // Kiểm tra nếu data là mảng và có dữ liệu
+            if (Array.isArray(data) && data.length > 0) {
+                // Tạo một thẻ <ul> mới
+                const ul = document.createElement('ul');
+                fileListContainer.appendChild(ul); // Thêm <ul> vào container
+
+                // Lặp qua từng tệp/thư mục và hiển thị
+                data.forEach(item => {
+                    const li = document.createElement('li'); // Tạo thẻ <li> cho mỗi tệp/thư mục
+
+                    // Thêm lớp CSS cho <li> để làm button
+                    li.classList.add('file-item');
+                    li.style.cursor = 'pointer'; // Thêm kiểu con trỏ khi hover
+
+                    // Thêm biểu tượng vào li (sử dụng FontAwesome hoặc bất kỳ icon nào bạn thích)
+                    const icon = document.createElement('span');
+                    icon.classList.add('file-icon');
+
+                    // Thêm icon tương ứng với thư mục hoặc tệp
+                    if (item.permissions[0] === 'd') {
+                        icon.textContent = '📁'; // Biểu tượng thư mục
+                    } else {
+                        icon.textContent = '📄'; // Biểu tượng tệp
+                    }
+
+                    // Thêm icon vào <li>
+                    li.appendChild(icon);
+
+                    // Thêm tên tệp/thư mục vào <li>
+                    const text = document.createElement('span');
+                    text.textContent = ` ${item.name}`;
+                    li.appendChild(text);
+
+                    // Xử lý sự kiện click
+                    li.addEventListener('click', () => {
+                        console.log(`Clicked on: ${item.name}`);
+                        if (item.name == ".") return
+                        else if (item.name == "..") {
+                            folders.pop()
+                            const current = folders.join('/')
+                            console.log('current', current)
+                            pwd.textContent = current
+                            window.electronAPI.send('read-folder', { folderPath: '/' + current });
+
+                        }
+                        else if (item.permissions[0] === 'd') {
+                            // Nếu là thư mục, lưu lại thư mục hiện tại và gọi 'read-folder'
+                            // pwd.textContent = currentFolderPath
+                            console.log('click 1', folders)
+                            folders.push(item.name)
+                            const current = folders.join('/')
+                            pwd.textContent = current
+                            console.log('click 2', folders)
+                            window.electronAPI.send('read-folder', { folderPath: '/' + current });
+                        } else {
+                            // Nếu là tệp, gửi sự kiện 'read-file'
+                            window.electronAPI.send('read-file', { filePath: item.name });
+                        }
+                    });
+
+                    // Thêm <li> vào <ul>
+                    ul.appendChild(li);
+                });
+            } else {
+                fileListContainer.textContent = 'No files or directories found.';
+            }
+        });
+
+        // Xử lý nút Back
+        const backButton = document.getElementById('back-button');
+        backButton.addEventListener('click', () => {
+            if (folders.length > 0) {
+                folders.pop()
+                const current = folders.join('/')
+                console.log('current', current)
+                pwd.textContent = current
+                window.electronAPI.send('read-folder', { folderPath: '/' + current });
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>
